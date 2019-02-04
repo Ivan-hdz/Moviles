@@ -1,8 +1,0 @@
-MIDlet-1: HelloMIDlet, , palindroma.HelloMIDlet
-MIDlet-Jar-Size: 2916
-MIDlet-Jar-URL: Palindroma.jar
-MIDlet-Name: Palindroma
-MIDlet-Vendor: Vendor
-MIDlet-Version: 1.0
-MicroEdition-Configuration: CLDC-1.1
-MicroEdition-Profile: MIDP-2.1
