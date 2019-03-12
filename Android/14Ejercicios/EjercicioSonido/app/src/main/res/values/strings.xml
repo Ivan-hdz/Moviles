@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EjercicioSonido</string>
+    <string name="btn_text" />
+    <string name="sonido">sonido</string>
+</resources>

@@ -1,0 +1,7 @@
+<StackLayout>
+    <Label text="Nombre"></Label>
+    <TextField #nombre type="text"></TextField>
+    <Label text="Apellido"></Label>
+    <TextField #apellido type="text" ></TextField>
+    <Button text="Aceptar" (tap)="onTap(nombre.text, apellido.text)"></Button>
+</StackLayout>

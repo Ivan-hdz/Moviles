@@ -1,0 +1,10 @@
+<StackLayout>
+    <Label text="Ax² + Bx + C = 0"></Label>
+    <Label text="A"></Label>
+    <TextField #a keyboardType="number" ></TextField>
+    <Label text="B"></Label>
+    <TextField #b keyboardType="number" ></TextField>
+    <Label text="C"></Label>
+    <TextField #c keyboardType="number" ></TextField>
+    <Button text="Calcular" (tap)="calcular(a.text, b.text, c.text)"></Button>
+</StackLayout>
