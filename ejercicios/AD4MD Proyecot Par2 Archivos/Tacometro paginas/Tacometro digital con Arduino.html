@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://forum.arduino.cc/index.php?topic=281347.0 -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<link rel="stylesheet" type="text/css" href="./Tacometro digital con Arduino_files/index.css">
+	<link rel="stylesheet" type="text/css" href="./Tacometro digital con Arduino_files/responsive.css">
+	<link rel="stylesheet" type="text/css" href="./Tacometro digital con Arduino_files/jquery.sceditor.css">
+	<style>
+img.avatar { max-width: 65px; max-height: 65px; }</style>
+	<script type="text/javascript" async="" src="./Tacometro digital con Arduino_files/ga.js.descarga"></script><script><!-- // --><![CDATA[
+		var smf_theme_url = "https://forum.arduino.cc/Themes/default";
+		var smf_default_theme_url = "https://forum.arduino.cc/Themes/default";
+		var smf_images_url = "https://forum.arduino.cc/Themes/default/images";
+		var smf_smileys_url = "https://forum.arduino.cc/Smileys";
+		var smf_scripturl = "https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var smf_session_id = "a05316b549d0c52d5a207f5b3a3ba7a9";
+		var smf_session_var = "a831fb21";
+		var smf_member_id;
+		var ajax_notification_text = 'Loading...';
+		var help_popup_heading_text = 'A little lost? Let me explain:';
+	// ]]></script>
+	<script src="./Tacometro digital con Arduino_files/jquery.min.js.descarga"></script>
+	<script src="./Tacometro digital con Arduino_files/smf_jquery_plugins.js.descarga"></script>
+	<script src="./Tacometro digital con Arduino_files/script.js.descarga"></script>
+	<script src="./Tacometro digital con Arduino_files/theme.js.descarga"></script>
+	<script src="./Tacometro digital con Arduino_files/editor.js.descarga"></script>
+	<script src="./Tacometro digital con Arduino_files/jquery.sceditor.js.descarga"></script>
+	<script src="./Tacometro digital con Arduino_files/jquery.sceditor.bbcode.js.descarga"></script>
+	<script src="./Tacometro digital con Arduino_files/jquery.sceditor.smf.js.descarga"></script>
+	<script src="./Tacometro digital con Arduino_files/topic.js.descarga"></script>
+	<script><!-- // --><![CDATA[
+		var smf_smileys_url = 'https://forum.arduino.cc/Smileys/arduino';
+		var bbc_quote_from = 'Quote from';
+		var bbc_quote = 'Quote';
+		var bbc_search_on = 'on';
+	// ]]></script>
+	<meta name="description" content="Tacometro digital con Arduino">
+	<title>Tacometro digital con Arduino</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#557EA0">
+	<link rel="canonical" href="https://forum.arduino.cc/index.php?topic=281347.0">
+	<link rel="help" href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=help">
+	<link rel="contents" href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;">
+	<link rel="search" href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=search">
+	<link rel="alternate" type="application/rss+xml" title="Arduino Forum - RSS" href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;type=rss2;action=.xml">
+	<link rel="alternate" type="application/rss+xml" title="Arduino Forum - Atom" href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;type=atom;action=.xml">
+	<link rel="index" href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;board=80.0">
+</head>
+<body id="chrome" class="action_messageindex board_80" data-pinterest-extension-installed="cr2.0.5" style="padding-top: 0px;"><link rel="stylesheet" href="./Tacometro digital con Arduino_files/foundation2.css" type="text/css"><link rel="stylesheet" href="./Tacometro digital con Arduino_files/common-hacked.css" type="text/css"><link rel="stylesheet" href="./Tacometro digital con Arduino_files/new_style.css" type="text/css"><link rel="stylesheet" href="./Tacometro digital con Arduino_files/fonts.css" type="text/css"><link rel="stylesheet" href="./Tacometro digital con Arduino_files/arduino-icons.css" type="text/css">
+<script>
+  var userAgent = (navigator.userAgent || navigator.vendor || window.opera).toLowerCase();
+  if(userAgent.indexOf('mac')>0){
+    $("head").append('<style type="text/css">@-moz-document url-prefix() {h1 a, h2 a, h3 a, h4 a, h5 a, h1 a:hover, h2 a:hover, th a, th a:hover, h3 a:hover, h4 a:hover, h5 a:hover, #wikitext h2 a:hover, #wikitext h3 a:hover, #wikitext h4 a:hover {padding-bottom: 0.5em!important;} #pageheader .search input{font-family: "TyponineSans Regular 18";} #pagefooter .monospace{margin-top: -4px;} #navWrapper ul.left &gt; li{margin-top: -2px; padding-bottom: 2px;}#navWrapper ul.right &gt; li{margin-top: -5px; padding-bottom: 5px;}#navWrapper ul.right &gt; li ul{margin-top: 4px;} .slider-container .fixed-caption p{padding:8px 0 14px 0}}</style>');
+  }
+</script>
+
+<!--[if IE]>
+<link rel='stylesheet' href='https://id.arduino.cc//css/ie-monospace.css' type='text/css' />
+<![endif]-->
+
+<div id="menuWings" class="fixed" style="display: none;"></div>
+<div id="page">
+
+
+
+
+<!--[if IE 8]>
+<div class="alert-box panel ie8alert">
+  <p><strong>Arduino.cc offers limited compatibility for Internet Explorer 8. Get a modern browser as Chrome, Firefox or Safari.</strong></p>
+  <a href="" class="close">&times;</a>
+</div>
+<![endif]-->
+
+<div id="pageheader">
+  <div class="row">
+    <div class="small-6 large-8 eight columns">
+      <div class="title"><a href="https://www.arduino.cc/">Arduino</a></div>
+    </div>
+    <div class="small-6 large-4 four columns search">
+      <div class="row collapse">
+          <form method="GET" action="https://www.google.com/search">
+    <div class="small-12 twelve columns">
+      <i class="icon-search-2"></i>
+      <input type="hidden" name="ie" value="UTF-8">
+      <input type="hidden" name="oe" value="UTF-8">
+      <input type="text" name="q" size="25" maxlength="255" value="" placeholder="Search the Arduino Forum">
+      <input type="submit" name="btnG" value="search">
+      <input type="hidden" name="domains" value="http://forum.arduino.cc">
+      <input type="hidden" name="sitesearch" value="http://forum.arduino.cc">
+    </div>
+  </form>      </div>
+    </div>
+  </div>
+
+  <!--[if gte IE 9]><!-->
+  <div class="navWrapper">
+  <div class="small-12">
+  <div id="navWrapper" class="sticky">
+  <!--[endif]-->
+  <!--[if IE 8]>
+    <div id="navWrapper">
+  <![endif]-->
+    <nav class="top-bar" data-options="is_hover:true">
+      <ul class="title-area">
+        <li class="name"></li>
+      </ul>
+
+      
+    <section class="top-bar-section">
+        <ul class="left">
+          <li id="navLogo" style="display: none;">
+            <a href="https://www.arduino.cc/">
+              <img src="./Tacometro digital con Arduino_files/logo_46.png" alt="userpicture">
+            </a>
+          </li>
+          <li id="navHome" style="display: block;"><a href="https://www.arduino.cc/">Home</a></li>
+          <li><a href="https://store.arduino.cc/">Buy</a></li>
+          <li><a href="https://www.arduino.cc/en/Main/Software">Download</a></li>
+          <li class="has-dropdown not-click"><a href="https://www.arduino.cc/en/Main/Products">Products</a>
+            <ul class="dropdown"><li class="title back js-generated"><h5><a href="https://forum.arduino.cc/index.php?topic=281347.0#"><span class="backArrow">Back</span></a></h5></li><li><a class="parent-link js-generated" href="https://www.arduino.cc/en/Main/Products">Products</a></li>
+              <li><a href="https://www.arduino.cc/en/Main/Products">Arduino</a></li>
+              <li><a href="https://www.arduino.cc/en/Main/GenuinoProducts">Genuino</a></li>
+              <li><a href="https://www.arduino.cc/en/ArduinoAtHeart/Products">AtHeart</a></li>
+              <li><a href="https://www.arduino.cc/en/ArduinoCertified/Products">Certified</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown not-click"><a href="https://forum.arduino.cc/index.php?topic=281347.0#">Learning</a>
+            <ul class="dropdown"><li class="title back js-generated"><h5><a href="https://forum.arduino.cc/index.php?topic=281347.0#"><span class="backArrow">Back</span></a></h5></li>
+              <li><a href="https://www.arduino.cc/en/Guide/HomePage">Getting started</a></li>
+              <li><a href="https://www.arduino.cc/en/Tutorial/HomePage">Tutorials</a></li>
+              <li><a href="https://www.arduino.cc/en/Reference/HomePage">Reference</a></li>
+              <li><a href="https://www.arduino.cc/en/Main/CTCprogram">CTC Program</a></li>
+              <li><a href="http://playground.arduino.cc/">Playground</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="https://forum.arduino.cc/">Forum</a></li>
+          <li class="has-dropdown not-click"><a href="https://forum.arduino.cc/index.php?topic=281347.0#">Support</a>
+            <ul class="dropdown"><li class="title back js-generated"><h5><a href="https://forum.arduino.cc/index.php?topic=281347.0#"><span class="backArrow">Back</span></a></h5></li>
+              <li><a href="https://www.arduino.cc/en/Main/FAQ">FAQ</a></li>
+              <li><a href="https://www.arduino.cc/en/ContactUs">Contact Us</a></li>
+            </ul>
+          </li>
+          <li><a href="https://blog.arduino.cc/">Blog</a></li>
+        </ul>
+
+                <ul class="right">
+          <li><a href="https://id.arduino.cc/auth/login/?returnurl=https%3A%2F%2Fforum.arduino.cc%2Findex.php%3Ftopic%3D281347.0" class="cart">LOG IN</a></li>
+          <li><a href="https://id.arduino.cc/auth/signup" class="cart">SIGN UP</a></li>
+        </ul>
+              </section></nav>
+  </div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+				<div class="navigate_section" id="headerbread">
+          <div class="row" style="max-width: 960px!important;">
+          <div class="small-12">
+					<ul>
+          
+						<li>
+					<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;"><span>Arduino Forum</span></a>
+						</li>
+						<li>
+							<span class="dividers"> &gt; </span>
+					<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;#c6"><span>International</span></a>
+						</li>
+						<li>
+							<span class="dividers"> &gt; </span>
+					<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;board=32.0"><span>Español</span></a>
+						</li>
+						<li>
+							<span class="dividers"> &gt; </span>
+					<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;board=80.0"><span>Proyectos</span></a> <span class="board_moderators">(Moderators: <a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=profile;u=2563" title="Board Moderator">coleoptero</a>, <a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=profile;u=74525" title="Board Moderator">Arduteka</a>)</span>
+						</li>
+						<li class="last">
+							<span class="dividers"> &gt; </span>
+					<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.0"><span>Tacometro digital con Arduino</span></a>
+						</li>
+					</ul>
+        </div>
+				</div>
+				</div>
+  <div class="row collapse">
+  <div class="small-12 columns">
+	<div id="wrapper">
+    <div id="upper_section">
+			<div id="inner_section">
+				<div id="main_menu">
+					<ul class="dropmenu sf-js-enabled sf-arrows" id="menu_nav" style="touch-action: pan-y;">
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="content_section">
+			<div id="main_content_section">
+
+			<a id="msg1974984"></a>
+			<div class="pagesection top">
+				
+		<div class="buttonlist floatright">
+			
+				<a class="button-forum  button_strip_print" href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=printpage;topic=281347.0" rel="nofollow">Print</a>
+		</div>
+				 <a href="https://forum.arduino.cc/index.php?topic=281347.0#bot" class="topbottom floatleft">Go Down</a>
+				<div class="pagelinks floatleft">
+					<span class="pages">Pages: </span><span class="current_page">[1]</span> 
+				</div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<span id="top_subject" class="topic-icon topic-icon-">Topic: Tacometro digital con Arduino&nbsp;<span>(Read 8196 times)</span></span>
+						<span class="nextlinks floatright"><a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.0;prev_next=prev#new">previous topic</a> - <a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.0;prev_next=next#new">next topic</a></span>
+					</h3>
+				</div>
+				<form action="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=quickmod2;topic=281347.0" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave(&#39;a05316b549d0c52d5a207f5b3a3ba7a9&#39;, &#39;a831fb21&#39;) : false">
+				<div class="windowbg">
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<span class="off" title="Offline"></span>
+								<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=profile;u=300990" title="View the profile of minimiguel" class="pm_icon">minimiguel</a>
+							</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=profile;u=300990"><img class="avatar" src="./Tacometro digital con Arduino_files/minimiguel.jpg" alt="avatar_minimiguel" onerror="this.src=&#39;//dcw9y8se13llu.cloudfront.net/avatars/default.png&#39;;"></a>
+								</li>
+								<li class="icons"><img src="./Tacometro digital con Arduino_files/star.gif" alt="*"></li>
+								<li class="postgroup">Newbie</li>
+								<li class="postcount">Posts: 1</li>
+								<li class="custom karma">Karma: 0&nbsp;&nbsp;<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=karma;sa=applaud;uid=300990;a831fb21=a05316b549d0c52d5a207f5b3a3ba7a9">[add]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="./Tacometro digital con Arduino_files/xx.png" alt="">
+								</div>
+								<div id="subject_1974984" class="subject_title"><a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.msg1974984#msg1974984" rel="nofollow">Tacometro digital con Arduino</a></div>
+								<div class="page_number floatright">
+									 
+								</div>
+								<h5>
+									<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.msg1974984#msg1974984" rel="nofollow" title=" - Tacometro digital con Arduino" class="smalltext">Nov 25, 2014, 04:05 am</a>
+									<span class="smalltext modified" id="modified_1974984"></span>
+								</h5>
+								<div id="msg_1974984_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1974984">Hola comunidad,<br><br>Es mi primera vez escribiendo en este foro, la verdad que soy nuevo con esto de Arduino.<br><br>Mi proyecto es este<br><br>Necesito Controlar la velocidad de un Motor DC y medir la RPM, que se pueda visualizar en una LCD espero y me puedan ayudar e orientar de como realizarlo<br><br>saludos.</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg2">
+					<a id="msg1974989"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<span class="on" title="Online"></span>
+								<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=profile;u=236872" title="View the profile of surbyte" class="pm_icon">surbyte</a>
+							</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=profile;u=236872"><img class="avatar" src="./Tacometro digital con Arduino_files/surbyte.jpg" alt="avatar_surbyte" onerror="this.src=&#39;//dcw9y8se13llu.cloudfront.net/avatars/default.png&#39;;"></a>
+								</li>
+								<li class="icons"><img src="./Tacometro digital con Arduino_files/stargold.gif" alt="*"><img src="./Tacometro digital con Arduino_files/stargold.gif" alt="*"><img src="./Tacometro digital con Arduino_files/stargold.gif" alt="*"><img src="./Tacometro digital con Arduino_files/stargold.gif" alt="*"></li>
+								<li class="postgroup">Shannon Member</li>
+								<li class="postcount">Posts: 10,661</li>
+								<li class="custom karma">Karma: 613&nbsp;&nbsp;<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=karma;sa=applaud;uid=236872;a831fb21=a05316b549d0c52d5a207f5b3a3ba7a9">[add]</a></li>
+								<li class="blurb">Asegúrate que una busqueda por el foro y/o GOOGLE no dan la solución a tu pregunta.
+Utiliza un Titulo lo más explicativo posible. 
+Sube tu código y agrega los enlaces de las librerías.</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="./Tacometro digital con Arduino_files/xx.png" alt="">
+								</div>
+								<div id="subject_1974989" class="subject_title"><a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.msg1974989#msg1974989" rel="nofollow">Re: Tacometro digital con Arduino</a></div>
+								<div class="page_number floatright">
+									 #1 
+								</div>
+								<h5>
+									<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.msg1974989#msg1974989" rel="nofollow" title="Reply #1 - Re: Tacometro digital con Arduino" class="smalltext">Nov 25, 2014, 04:13 am</a>
+									<span class="smalltext modified" id="modified_1974989"></span>
+								</h5>
+								<div id="msg_1974989_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1974989">Y que investigaste?</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg">
+					<a id="msg1975590"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<span class="on" title="Online"></span>
+								<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=profile;u=236872" title="View the profile of surbyte" class="pm_icon">surbyte</a>
+							</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=profile;u=236872"><img class="avatar" src="./Tacometro digital con Arduino_files/surbyte.jpg" alt="avatar_surbyte" onerror="this.src=&#39;//dcw9y8se13llu.cloudfront.net/avatars/default.png&#39;;"></a>
+								</li>
+								<li class="icons"><img src="./Tacometro digital con Arduino_files/stargold.gif" alt="*"><img src="./Tacometro digital con Arduino_files/stargold.gif" alt="*"><img src="./Tacometro digital con Arduino_files/stargold.gif" alt="*"><img src="./Tacometro digital con Arduino_files/stargold.gif" alt="*"></li>
+								<li class="postgroup">Shannon Member</li>
+								<li class="postcount">Posts: 10,661</li>
+								<li class="custom karma">Karma: 613&nbsp;&nbsp;<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=karma;sa=applaud;uid=236872;a831fb21=a05316b549d0c52d5a207f5b3a3ba7a9">[add]</a></li>
+								<li class="blurb">Asegúrate que una busqueda por el foro y/o GOOGLE no dan la solución a tu pregunta.
+Utiliza un Titulo lo más explicativo posible. 
+Sube tu código y agrega los enlaces de las librerías.</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="./Tacometro digital con Arduino_files/xx.png" alt="">
+								</div>
+								<div id="subject_1975590" class="subject_title"><a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.msg1975590#msg1975590" rel="nofollow">Re: Tacometro digital con Arduino</a></div>
+								<div class="page_number floatright">
+									 #2 
+								</div>
+								<h5>
+									<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.msg1975590#msg1975590" rel="nofollow" title="Reply #2 - Re: Tacometro digital con Arduino" class="smalltext">Nov 25, 2014, 06:35 pm</a>
+									<span class="smalltext modified" id="modified_1975590"></span>
+								</h5>
+								<div id="msg_1975590_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1975590">Por lo que me dices en el MP (mensaje Privado) ya puedes controlar el motor y solo te falta el LCD.<br>El LCD es muy facil de usar.<br>Primero mira esta página y luego me comentas. Debes conectarlo como sugiere la pagina.<br><br><img src="./Tacometro digital con Arduino_files/LCD_bb.png" alt="" class="bbc_img"><br><br>Es muy facil, descargas la librería <a href="http://arduino.cc/en/pmwiki.php?n=Tutorial/LiquidCrystal" class="bbc_link" target="_blank">LiquidCrystal</a>.<br>Si entiendes inglés acá esta perfectamente explicado.<br>Tienes que cabler esto<br><br>To wire your LCD screen to your Arduino, connect the following pins:<br><br>&nbsp; &nbsp; LCD RS pin to digital pin 12<br>&nbsp; &nbsp; LCD Enable pin to digital pin 11<br>&nbsp; &nbsp; LCD D4 pin to digital pin 5<br>&nbsp; &nbsp; LCD D5 pin to digital pin 4<br>&nbsp; &nbsp; LCD D6 pin to digital pin 3<br>&nbsp; &nbsp; LCD D7 pin to digital pin 2 <br><br>No necesariamente deben ser esos pines si usas otros cuando defines con esta instruccion cambias por los pines que estes usando en tu caso.<br><div class="codeheader">Code: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Select]</a></div><code class="bbc_code" style="max-height: none; height: auto;">#include &lt;LiquidCrystal.h&gt;&nbsp; &nbsp;// si o si usar la librería<br><br>// initialize the library with the numbers of the interface pins<br>LiquidCrystal lcd(12, 11, 5, 4, 3, 2);&nbsp; &nbsp; // y aca defines en la secuencia de arriba los pines.<br><br></code><br><br>Aca un código ejemplo<br><br><div class="codeheader">Code: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Select]</a></div><code class="bbc_code" style="max-height: none; height: 200px;">/* LCD RS pin to digital pin 12<br>&nbsp;* LCD Enable pin to digital pin 11<br>&nbsp;* LCD D4 pin to digital pin 5<br>&nbsp;* LCD D5 pin to digital pin 4<br>&nbsp;* LCD D6 pin to digital pin 3<br>&nbsp;* LCD D7 pin to digital pin 2<br>&nbsp;* LCD R/W pin to ground<br>&nbsp;* 10K resistor:<br>&nbsp;* ends to +5V and ground<br>&nbsp;* wiper to LCD VO pin (pin 3)<br>&nbsp;<br>&nbsp;Library originally added 18 Apr 2008<br>&nbsp;by David A. Mellis<br>&nbsp;library modified 5 Jul 2009<br>&nbsp;by Limor Fried (http://www.ladyada.net)<br>&nbsp;example added 9 Jul 2009<br>&nbsp;by Tom Igoe<br>&nbsp;modified 22 Nov 2010<br>&nbsp;by Tom Igoe<br>&nbsp;<br>&nbsp;This example code is in the public domain.<br><br>&nbsp;http://www.arduino.cc/en/Tutorial/LiquidCrystal<br>&nbsp;*/<br><br>// include the library code:<br>#include &lt;LiquidCrystal.h&gt;<br><br>// initialize the library with the numbers of the interface pins<br>LiquidCrystal lcd(12, 11, 5, 4, 3, 2);<br><br>void setup() {<br>&nbsp; // set up the LCD's number of columns and rows:<br>&nbsp; lcd.begin(16, 2);<br>&nbsp; // Print a message to the LCD.<br>&nbsp; lcd.print("hello, world!");<br>}<br><br>void loop() {<br>&nbsp; // set the cursor to column 0, line 1<br>&nbsp; // (note: line 1 is the second row, since counting begins with 0):<br>&nbsp; lcd.setCursor(0, 1);<br>&nbsp; // print the number of seconds since reset:<br>&nbsp; lcd.print(millis()/1000);<br>}</code></div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg2">
+					<a id="msg1975675"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<span class="off" title="Offline"></span>
+								<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=profile;u=217763" title="View the profile of Metaconta" class="pm_icon">Metaconta</a>
+							</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=profile;u=217763"><img class="avatar" src="./Tacometro digital con Arduino_files/default.png" alt="avatar_Metaconta" onerror="this.src=&#39;//dcw9y8se13llu.cloudfront.net/avatars/default.png&#39;;" data-pin-nopin="true"></a>
+								</li>
+								<li class="icons"><img src="./Tacometro digital con Arduino_files/star.gif" alt="*"><img src="./Tacometro digital con Arduino_files/star.gif" alt="*"><img src="./Tacometro digital con Arduino_files/star.gif" alt="*"><img src="./Tacometro digital con Arduino_files/star.gif" alt="*"><img src="./Tacometro digital con Arduino_files/star.gif" alt="*"></li>
+								<li class="postgroup">God Member</li>
+								<li class="postcount">Posts: 565</li>
+								<li class="custom karma">Karma: 44&nbsp;&nbsp;<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=karma;sa=applaud;uid=217763;a831fb21=a05316b549d0c52d5a207f5b3a3ba7a9">[add]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="./Tacometro digital con Arduino_files/xx.png" alt="">
+								</div>
+								<div id="subject_1975675" class="subject_title"><a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.msg1975675#msg1975675" rel="nofollow">Re: Tacometro digital con Arduino</a></div>
+								<div class="page_number floatright">
+									 #3 
+								</div>
+								<h5>
+									<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.msg1975675#msg1975675" rel="nofollow" title="Reply #3 - Re: Tacometro digital con Arduino" class="smalltext">Nov 25, 2014, 07:33 pm</a>
+									<span class="smalltext modified" id="modified_1975675"><span class="lastedit">Last Edit</span>: Nov 25, 2014, 07:55 pm by Metaconta</span>
+								</h5>
+								<div id="msg_1975675_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1975675">Hola:<br><br>En primer lugar, el motor DC tiene que tener otro cable llamado tacómetro. Para hacer pruebas más rápido, puedes usar un ventilador de PC de toda la vida con tacómetro. Se diferencia el que tiene tacómetro con un cable normalmente amarillo junto a los dos de alimentación rojo y negro.<br><br><img src="./Tacometro digital con Arduino_files/refrigeracion+3.jpg" alt="" class="bbc_img"><br><br>Puedes tener un ventilador a 12Vdc para alimentarlo. El cable amarillo te proporciona a su salida 5Vdc en el cual puedes ponerlo directamente en Arduino, o un PIC, etc.<br><br>Por cada vuelta que da un ventilador de 12V, el cable amarillo o tacómetro suelta 5Vdc, puedes poner un Led directamente con su resistencia 330 Ohmios y se enciende.<br><br>Si por cualquier motivo se para el ventilador, el Led se apaga.<br><br>Por el LCD (en el cual estoy elaborando un tutorial paso a paso como se maneja que ya publicaré) debe mostrar el número de vueltas llamado RPM.<br><br>Si encuentras libros sobre motores eléctricos, la fórmula es esta:<br><br><span class="bbc_bold">RPM = 230 * frec / numero de polos</span><br><br>Perdón, hablabas motores en DC.<br><br>las rpm de un motor de cc está dado por la fórmula<br><span class="bbc_bold"><br>RPM = Vt - Ia ( Ra ) - Is (Rs) - Vescobillas / K ϕ</span><br><br>donde<br>Vt voltaje aplicado<br>Ia corriente de armadura<br>Is corriente del campor serie (si la hubiera)<br>Ra resistencia de armadura<br>Rs resistencia de campor serie (si la hubiera)<br>Vescobillas caida de tensión en la escibillas<br>K ϕ flujo magnetico de excitación <br><br>Por aquí comentan sobre RPM y motores.<br><a href="http://forum.arduino.cc/index.php?topic=77271.0" class="bbc_link" target="_blank">http://forum.arduino.cc/index.php?topic=77271.0</a><br><br><img src="./Tacometro digital con Arduino_files/dscn3565.jpg" alt="" class="bbc_img"><br>Este tipo de tacómetro no me gusta mucho, en algunos casos puede ayudar.<br><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/" class="bbc_link" target="_blank">https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/</a><br><br><br><br>Saludos.</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg">
+					<a id="msg2560268"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<span class="off" title="Offline"></span>
+								<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=profile;u=449677" title="View the profile of hdzpaz13" class="pm_icon">hdzpaz13</a>
+							</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=profile;u=449677"><img class="avatar" src="./Tacometro digital con Arduino_files/default.png" alt="avatar_hdzpaz13" onerror="this.src=&#39;//dcw9y8se13llu.cloudfront.net/avatars/default.png&#39;;"></a>
+								</li>
+								<li class="icons"><img src="./Tacometro digital con Arduino_files/star.gif" alt="*"></li>
+								<li class="postgroup">Newbie</li>
+								<li class="postcount">Posts: 2</li>
+								<li class="custom karma">Karma: 0&nbsp;&nbsp;<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=karma;sa=applaud;uid=449677;a831fb21=a05316b549d0c52d5a207f5b3a3ba7a9">[add]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="./Tacometro digital con Arduino_files/xx.png" alt="">
+								</div>
+								<div id="subject_2560268" class="subject_title"><a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.msg2560268#msg2560268" rel="nofollow">Re: Tacometro digital con Arduino</a></div>
+								<div class="page_number floatright">
+									 #4 
+								</div>
+								<h5>
+									<a href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;topic=281347.msg2560268#msg2560268" rel="nofollow" title="Reply #4 - Re: Tacometro digital con Arduino" class="smalltext">Jan 11, 2016, 07:37 pm</a>
+									<span class="smalltext modified" id="modified_2560268"></span>
+								</h5>
+								<div id="msg_2560268_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2560268">Hola soy nuevo en el mundo Arduino, quisiera saber si alguien podría ayudarme con mi proyecto.<br><br>El proyecto consta de crear un sistema que mida la relación de revoluciones y voltaje de un generador eólico y me lo arroje a un Display.<br><br>Espero tener pronta respuesta, saludos!</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				</form>
+			</div>
+			<div class="pagesection">
+				
+		<div class="buttonlist floatright">
+			
+				<a class="button-forum  button_strip_print" href="https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;action=printpage;topic=281347.0" rel="nofollow">Print</a>
+		</div>
+				 <a href="https://forum.arduino.cc/index.php?topic=281347.0#main_content_section" class="topbottom floatleft" id="bot">Go Up</a>
+				<div class="pagelinks floatleft">
+					<span class="pages">Pages: </span><span class="current_page">[1]</span> 
+				</div>
+			</div>
+			<div id="moderationbuttons">
+				
+			</div>
+			<div id="display_jump_to"><label class="smalltext" for="display_jump_to_select">Jump to:</label> <select name="display_jump_to_select" id="display_jump_to_select" onfocus="grabJumpToContent(this);"><option value="?board=80.0">===&gt; Proyectos</option></select>&nbsp;<input type="button" class="button_submit" value="Go" onclick="window.location.href = &#39;https://forum.arduino.cc/index.php?PHPSESSID=4se5ifrn3ad9bgso1maug08og5&amp;board=80.0&#39;;"></div>
+			<br class="clear">
+				<script><!-- // --><![CDATA[
+					var oQuickReply = new QuickReply({
+						bDefaultCollapsed: false,
+						iTopicId: 281347,
+						iStart: 0,
+						sScriptUrl: smf_scripturl,
+						sImagesUrl: smf_images_url,
+						sContainerId: "quickReplyOptions",
+						sImageId: "quickReplyExpand",
+						sClassCollapsed: "toggle_up",
+						sClassExpanded: "toggle_down",
+						bIsFull: true
+					});
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							sClassName: 'quick_edit',
+							bShowModify: true,
+							iTopicId: 281347,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container">\n\t\t\t\t\t\t\t\t\t<div id="error_box" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br>\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="a831fb21" value="a05316b549d0c52d5a207f5b3a3ba7a9">\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="281347">\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%">\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'a05316b549d0c52d5a207f5b3a3ba7a9\', \'a831fb21\');" accesskey="s" class="button_submit">&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="3" onclick="return oQuickModify.modifyCancel();" class="button_submit">\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" name="subject" value="%subject%" size="80" maxlength="80" tabindex="4" class="input_text">',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="' + smf_scripturl + '?topic=281347.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 8196 times)',
+							sTemplateReasonEdit: '<input type="text" name="modify_reason" value="%modify_reason%" size="80" maxlength="80" tabindex="5" class="input_text">)',
+							sTemplateReasonNormal: '%modify_text',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 80,
+							iCurBoardChildLevel: 1,
+							sCurBoardName: "Proyectos",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "Go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 80,
+							iTopicId: 281347,
+							sSessionId: smf_session_id,
+							sSessionVar: smf_session_var,
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+           <br><style>.pagefooter a { color: white !important; }</style>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22581631-3']);
+		_gaq.push(['_setDomainName', 'arduino.cc']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script><link rel="stylesheet" type="text/css" href="./Tacometro digital con Arduino_files/newsletter.css">
+<div id="newsletterModal" class="reveal-modal small">
+  <form action="https://www.arduino.cc/subscribe.php" method="post" name="sendy-subscribe-form" id="sendy-subscribe-form" class="form-popup">
+    <div class="modalHeader">
+      <h3 style="line-height: 1.8rem;" class="modal-header-alt">This link has expired. <br>Please re-subscribe to our Newsletters.</h3>
+      <h3 class="modal-header-main">Subscribe to our Newsletters</h3>
+    </div>
+    <div class="modalBody" id="newsletterModalBody">
+        <div id="newsletterEmailField" class="row" style="padding-left: 0">
+          <div class="large-2 columns">
+            <label for="email" class="newsletter-form-label inline">Email</label>
+          </div>
+          <div class="large-10 columns" style="padding-left: 0">
+            <input placeholder="Enter your email address" type="email" name="email" class="subscribe-form-input">
+            <p id="emailMissing" class="newsletterPopupError">Please enter a valid email to subscribe</p>
+          </div>
+        </div>
+        <div style="margin-left:20px">
+          <div style="margin-bottom:0.3em">
+            <input style="display:none" type="checkbox" checked="" name="list[]" value="arduino_newsletter_id" id="worldwide" class="newsletter-form-checkbox">
+            <label for="worldwide"></label>
+            <div style="display:inline-block" class="newsletter-form-label">Arduino Newsletter</div>
+          </div>
+          <div style="margin-bottom:0.3em">
+            <input style="display:none" type="checkbox" checked="" name="list[]" value="arduino_store_newsletter_id" id="store" class="newsletter-form-checkbox">
+            <label for="store"></label>
+            <div style="display:inline-block" class="newsletter-form-label">Arduino Store Newsletter</div>
+          </div>
+          <div>
+            <input style="display:none" type="checkbox" name="list[]" value="arduino_italians_newsletter_id" id="italians" class="newsletter-form-checkbox">
+            <label for="italians"></label>
+            <div style="display:inline-block" class="newsletter-form-label">Newsletter Italiana</div>
+          </div>
+        </div>
+        <div>
+          <p class="newsletterPopupError2" id="newsletterSubscribeStatus"></p>
+        </div>
+    </div>
+    <div class="row modalFooter">
+      <div class="form-buttons-row">
+        
+          <button type="button" value="Cancel" class="popup-form-button white cancel-modal close-reveal-modal">Cancel</button>
+          <button type="submit" name="Subscribe" id="subscribe-submit-btn" class="popup-form-button">Next</button>
+        
+      </div>
+    </div>
+  </form>
+
+  <!-- step 2, confirm popup -->
+  <div class="confirm-popup" style="margin-bottom:1em">
+    <div class="modalHeader">
+      <h3>Confirm your email address</h3>
+    </div>
+    <div class="modalBody" id="newsletterModalBody" style="padding-right:1em;margin-bottom:0">
+        <p style="margin-bottom:1em;font-size:15px">
+          We need to confirm your email address.<br>
+          To complete the subscription, please click the link in the
+          email we just sent you.
+        </p>
+        <p style="margin-bottom:1em;font-size:15px">
+          Thank you for subscribing!
+        </p>
+        <p style="margin-bottom:1em;font-size:15px">
+          Arduino<br>
+          via Egeo 16<br>
+          Torino, 10131<br>
+          Italy<br>
+        </p>
+    </div>
+    <div class="row modalFooter">
+      <div class="form-buttons-row">
+        
+          <button name="Ok" class="popup-form-button" id="close-confirm-popup">Ok</button>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<script type="application/javascript">
+    $(document).ready(function() {
+    
+    function validateEmail(email) { 
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    } 
+
+    var openPopup = function() {
+
+      $('.confirm-popup').hide();
+      $('.form-popup').show();
+
+      var modalBody = $('#newsletterModalBody');
+      var emailInput = modalBody.find('#newsletterEmailField').find('input');
+      var subscribeButton = $('#subscribe-submit-btn');
+      var emailMissingP = modalBody.find('#emailMissing');
+      var formValid = false;
+      var confirmHtml = $('#newsletterModalConfirm').html();
+      var email = $('#sendy-EMAIL').val(); 
+
+      //reset popup values / appearance
+      $("#newsletterSubscribeStatus").hide();
+      $('#newsletterModal').find('.modal-header-main').show();
+      $('#newsletterModal').find('.modal-header-alt').hide();
+      emailMissingP.hide();
+      emailInput.val('');
+      modalBody.find('#store').prop('checked', true);
+      modalBody.find('#worldwide').prop('checked', true);
+
+      //both checkboxes checked at beginning 
+       
+      subscribeButton.removeAttr('disabled');
+
+      //If user didn't provide email by footer input box, show input box in the popup, else just checkboxes
+      if(validateEmail(email)) {
+        emailInput.val(email); 
+        formValid = true;
+      } else {
+        emailMissingP.show();  
+        subscribeButton.attr('disabled', 'disabled');
+        $('#sendy-EMAIL').val('');
+        formValid = false;
+      }
+
+      $('#newsletterModal').foundation('reveal', 'open');
+
+      emailInput.on('input propertychange paste', function(e) {
+           if(!validateEmail(emailInput.val())) {
+              emailMissingP.show();
+              subscribeButton.attr('disabled', 'disabled');
+              formValid = false;
+           } else {
+              formValid = true;
+              emailMissingP.hide();
+              subscribeButton.removeAttr('disabled');
+           }     
+      });
+    };
+
+    $('#sendy-EMAIL').on('keypress', function(e) {
+      if(e.keyCode == 13) {
+        openPopup();
+      }
+    });
+
+    $('#sendy-subscribe').on('click', function() {
+      openPopup();
+    });
+  
+    $("#sendy-subscribe-form").on('keypress', function(e) {
+        if(e.keyCode == 13 && formValid) {
+          e.preventDefault(); 
+          $(this).submit();
+        }
+    });
+
+    $('#subscribe-submit-btn').on('click', function(e){
+      e.preventDefault(); 
+      // disable 'NEXT' button to avoid multiple submits
+      $('#subscribe-submit-btn').attr('disabled', 'disabled');
+      $("#sendy-subscribe-form").submit();
+    });
+
+    $('#close-confirm-popup').on('click', function(e){
+      $('#newsletterModal').foundation('reveal', 'close');  
+    });
+
+    // trigger click on checkbox when clicking text label
+    $('.newsletter-form-label').on('click', function(e){
+      $(this).siblings("label").click();
+    });
+
+    $("#sendy-subscribe-form").on('submit', function(e){
+      e.preventDefault(); 
+      
+      var $form = $(this),
+      //name = $form.find('input[name="name"]').val(),
+      email = $form.find('input[name="email"]').val(),
+      lists = $form.find('input[name="list[]"]:checked'),
+      url = $form.attr('action');
+      
+      //reset
+      $("#newsletterSubscribeStatus").hide(); 
+
+      if(!lists.length) {
+        $("#newsletterSubscribeStatus").html("Please select at least <br> one newsletter.");
+        $("#newsletterSubscribeStatus").show(); 
+        //button 'NEXT' can be enabled
+        $('#subscribe-submit-btn').removeAttr('disabled');
+        return;
+      }
+
+      var listValues = [];
+      for(var i=0; i<lists.length; i++) {
+        listValues.push($(lists[i]).val());
+      }
+
+      $.post(url, {lists:listValues, email:email},
+        function(data) {
+            if(data)
+            {
+              if(data=="All fields are required.")
+              {
+                $("#newsletterSubscribeStatus").text("Please fill in your email.");
+                $("#newsletterSubscribeStatus").show(); 
+              }
+              else if(data=="Invalid email address.")
+              {
+                $("#newsletterSubscribeStatus").text("Your email address is invalid.");
+                $("#newsletterSubscribeStatus").show(); 
+              }
+              // else if(data=="Invalid list ID.")
+              // {
+              //   $("#newsletterSubscribeStatus").text("Your list ID is invalid.");
+              //   $("#newsletterSubscribeStatus").show(); 
+              // }
+              else if(data=="Already subscribed.")
+              {
+                $("#newsletterSubscribeStatus").text("You're already subscribed!");
+                $("#newsletterSubscribeStatus").show(); 
+              }
+              else if(data=="No list selected.")
+              {
+                $("#newsletterSubscribeStatus").text("Please select at least <br> one newsletter.");
+                $("#newsletterSubscribeStatus").show(); 
+              }
+              else
+              {
+                //$("#newsletterSubscribeStatus").text("You're subscribed!");
+                //change popup
+                $('.form-popup').hide();
+                $('.confirm-popup').show();
+                
+              }
+            }
+            else
+            {
+              alert("Sorry, unable to subscribe. Please try again later!");
+            }
+          //button 'NEXT' can be enabled now
+          $('#subscribe-submit-btn').removeAttr('disabled');
+        }
+      );
+    
+    });
+
+  });
+  </script>
+<div id="pagefooter" class="pagefooter">
+  <div class="row">
+    <div class="large-8 eight columns">
+      <div class="large-4 four columns newsletter-box">
+       <!-- Begin Sendy Signup Form -->
+       <h6>Newsletter</h6>
+        <div>
+          <input type="email" name="email" class="email" id="sendy-EMAIL" placeholder="Enter your email to sign up">
+          <i class="icon-right-small"></i>
+          <input value="Subscribe" name="subscribe" id="sendy-subscribe" class="newsletter-button">
+        </div>
+       <!--End sendy_embed_signup-->
+      </div>
+      <div style="clear:both;"></div>
+      <ul class="inline-list">
+        <li class="monospace">©2016 Arduino</li>
+        <li><a href="https://www.arduino.cc/en/Main/CopyrightNotice">Copyright Notice</a></li>
+        <li><a href="https://www.arduino.cc/en/Main/ContactUs">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="large-4 four columns">
+      <ul id="arduinoSocialLinks" class="arduino-social-links">
+        <li>
+          <a href="https://twitter.com/arduino">
+            <img src="./Tacometro digital con Arduino_files/twitter.png">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.facebook.com/official.arduino">
+            <img src="./Tacometro digital con Arduino_files/facebook.png">
+          </a>
+        </li>
+        <li>
+          <a href="https://plus.google.com/+Arduino">
+            <img src="./Tacometro digital con Arduino_files/gplus.png">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.flickr.com/photos/arduino_cc">
+            <img src="./Tacometro digital con Arduino_files/flickr.png">
+          </a>
+        </li>
+        <li>
+          <a href="http://youtube.com/arduinoteam">
+            <img src="./Tacometro digital con Arduino_files/youtube.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div id="ajax_in_progress" style="display: none;">Loading...</div>
+<script><!-- // --><![CDATA[
+	function triggerCron() {
+		var tempImage = new Image();
+		tempImage.src = 'https://forum.arduino.cc' + "/cron.php?ts=1479266565";
+	}
+	window.setTimeout(triggerCron, 1);
+// ]]></script>
+    <script src="./Tacometro digital con Arduino_files/modernizr.js.descarga"></script>
+    <!--[if gte IE 9]><!-->
+    <script src="./Tacometro digital con Arduino_files/foundation.min.js.descarga"></script>
+    <script src="./Tacometro digital con Arduino_files/foundation.topbar.custom.js.descarga"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <!--<![endif]-->
+    <!--[if IE 8]>
+    <script src="https://www.arduino.cc/js/foundation_ie8.min.js"></script>
+    <script src="https://www.arduino.cc/js/ie8/jquery.foundation.alerts.js"></script>
+    <script src="https://www.arduino.cc/js/app.js"></script>
+    <![endif]-->
+
+<span style="border-radius: 2px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased; top: 1170px; left: 476px;">Guardar</span></body></html>

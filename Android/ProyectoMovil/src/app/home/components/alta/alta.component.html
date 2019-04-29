@@ -1,0 +1,14 @@
+<StackLayout [formGroup]="formulario" >
+    <TextField formControlName="correo" keyboardType="email" hint="Correo electronico" ></TextField>
+    <TextField formControlName="contrasenia" secure="true" hint="Contraseña" ></TextField>
+    <TextField formControlName="nombre" hint="Nombre" ></TextField>
+    <TextField formControlName="primerApellido" hint="Primer Apellido"  ></TextField>
+    <TextField formControlName="segundoApellido" hint="Segundo Apellido" ></TextField>
+    <TextField formControlName="edad" hint="Edad" keyboardType="number" ></TextField>
+    <TextField formControlName="sexo" hint="Sexo" ></TextField>
+    <TextField formControlName="descripcion" hint="Descripción" ></TextField>
+    <Button class="btn btn-active" text="Guardar" (tap)="submit()" ></Button>
+    <Button class="btn btn-ruby" text="Cancelar" (tap)="router.goHome()"></Button>
+    <ActivityIndicator class="collapsed"  busy="{{isLoading}}" text="Cargando..." color="#df7b36"  width="50" height="50" class="activity-indicator"></ActivityIndicator>
+
+</StackLayout>

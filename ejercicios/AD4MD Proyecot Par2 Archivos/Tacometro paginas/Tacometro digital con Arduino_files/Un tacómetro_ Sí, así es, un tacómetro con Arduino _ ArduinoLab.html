@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/ -->
+<html lang="es-ES"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Un tacómetro? Sí, así es, un tacómetro con Arduino | ArduinoLab</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" type="text/css" media="all" href="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/style.css">
+<link rel="pingback" href="https://arduinolab.wordpress.com/xmlrpc.php">
+<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="alternate" type="application/rss+xml" title="ArduinoLab » Feed" href="https://arduinolab.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="ArduinoLab » RSS de los comentarios" href="https://arduinolab.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="ArduinoLab » Un tacómetro? Sí, así es, un tacómetro con Arduino RSS de los comentarios" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/feed/">
+	<script async="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/beacon.js.descarga"></script><script type="text/javascript" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/showad.js.descarga" async=""></script><script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s1.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1473172720h&ver=4.6.1-RC1-38499"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/wp-emoji-release.min.js.descarga" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="all-css-0-1" href="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource" type="text/css" media="all">
+<script type="text/javascript" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource(1)"></script>
+<link rel="stylesheet" id="all-css-0-2" href="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/style(1).css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://arduinolab.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Arduino UNO + termo-resistencia LM35 + pantalla LCD= termómetro con pantalla LCD" href="https://arduinolab.wordpress.com/2012/04/17/arduino-uno-termo-resistencia-lm35-pantalla-ldc-termometro-con-pantalla-lcd/">
+<link rel="next" title="El robot más entretenido que he visto!" href="https://arduinolab.wordpress.com/2012/05/06/el-robot-mas-entretenido-que-he-visto-9-2/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/">
+<link rel="shortlink" href="http://wp.me/p2hJLA-2O">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Farduinolab.wordpress.com%2F2012%2F04%2F25%2Fun-tacometro-si-asi-es-un-tacometro-con-arduino-16-2%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Farduinolab.wordpress.com%2F2012%2F04%2F25%2Fun-tacometro-si-asi-es-un-tacometro-con-arduino-16-2%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Un tacómetro? Sí, así es, un tacómetro con Arduino">
+<meta property="og:url" content="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/">
+<meta property="og:description" content="Para aquellos que no saben qué es un tacómetro. -Un tacómetro es un dispositivo que se usa para medir las revoluciones por minuto (RPM) y revoluciones por segundo (RPS), son muy comunes en los vehí…">
+<meta property="article:published_time" content="2012-04-26T02:12:35+00:00">
+<meta property="article:modified_time" content="2012-05-28T16:44:36+00:00">
+<meta property="og:site_name" content="ArduinoLab">
+<meta property="og:image" content="https://arduinolab.files.wordpress.com/2012/04/dscn3565.jpg">
+<meta property="og:image:width" content="4000">
+<meta property="og:image:height" content="3000">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:site" content="@wordpressdotcom">
+<meta name="twitter:image" content="https://arduinolab.files.wordpress.com/2012/04/esquema-tacometro-blog1.jpg?w=240">
+<meta name="twitter:card" content="summary">
+<meta property="fb:app_id" content="249643311490">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/c093a1bea4713a0d6624301e73023f9d?s=32" sizes="16x16">
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/c093a1bea4713a0d6624301e73023f9d?s=32" sizes="16x16">
+<link rel="apple-touch-icon-precomposed" href="https://secure.gravatar.com/blavatar/c093a1bea4713a0d6624301e73023f9d?s=114">
+<link rel="openid.server" href="https://arduinolab.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="https://arduinolab.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="https://arduinolab.wordpress.com/osd.xml" title="ArduinoLab">
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+<meta name="theme-color" content="#030303">
+<meta name="application-name" content="ArduinoLab"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="Proyectos con Arduino"><meta name="msapplication-task" content="name=Suscríbete;action-uri=https://arduinolab.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/c093a1bea4713a0d6624301e73023f9d?s=16"><meta name="msapplication-task" content="name=Regístrate para crear un blog gratis;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=Asistencia de WordPress.com;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=Foros de WordPress.com;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="title" content="Un tacómetro? Sí, así es, un tacómetro con Arduino | ArduinoLab en WordPress.com">
+<meta name="description" content="Para aquellos que no saben qué es un tacómetro. -Un tacómetro es un dispositivo que se usa para medir las revoluciones por minuto (RPM) y revoluciones por segundo (RPS), son muy comunes en los vehículos como motos, carros, aviones, lanchas etc... En un vehículo a motor de combustión interna de qué sirve, básicamente sabemos que…">
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #030303; background-image: url('https://arduinolab.files.wordpress.com/2012/04/arduino-3.jpg'); background-repeat: repeat; background-position: top left; background-attachment: fixed; }
+</style>
+		<script type="text/javascript" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/amzn_ads.js.descarga"></script>
+		<script type="text/javascript">
+		try { amznads.getAds("3033"); } catch(e) { /* ignore */ }
+		</script><script type="text/javascript" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/bid"></script>
+		<script type="text/javascript">
+		try {
+			var a9_p = amznads.getKeys(),
+			_ipw_custom = {
+				wordAds: '0',
+				adSafe: '0',
+				domain: 'arduinolab.wordpress.com',
+				pageURL: 'https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/'
+			};
+			if("undefined"!=typeof a9_p&&""!=a9_p&&null!==a9_p&&"[object Array]"===Object.prototype.toString.call(a9_p)){var a="",b=0,c=a9_p.length;a9_p.sort();for(var d=0;d<c;d++){a9_p[d-b]=a9_p[d-b].replace(/a1x6p/,"a160x600p");var e=a9_p[d-b].split("p");e[0]==a&&(a9_p.splice(d-b,1),b++);a=e[0]}_ipw_custom.amznPay=a9_p};document.close();
+		} catch(e) {}
+		</script>		<!-- IPONWEB header script -->
+		<script type="text/javascript" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/head.js.descarga"></script>
+		<script type="text/javascript">
+		jQuery(window).ready(function () {
+			jQuery("a.wpa-about").text("Acerca de estos anuncios");
+		});
+		</script><link rel="amphtml" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/amp/"><style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script><script type="text/javascript" async="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/ga.js.descarga"></script>
+<script type="text/javascript" async="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource(2)"></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/services.css"><script type="text/javascript" async="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource(3)"></script></head>
+
+<body class="single single-post postid-174 single-format-standard custom-background mp6 customizer-styles-applied single-author highlander-enabled highlander-light" data-pinterest-extension-installed="cr2.0.5">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="https://arduinolab.wordpress.com/" title="ArduinoLab" rel="home">ArduinoLab</a>
+					</span>
+				</div>
+				<div id="site-description">Proyectos con Arduino</div>
+
+										<a class="home-link" href="https://arduinolab.wordpress.com/" title="ArduinoLab" rel="home">
+							<img src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/logo-blog-y-2-313.png" width="940" height="198" alt="">
+						</a>
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#content" title="Ir al contenido">Ir al contenido</a></div>
+								<div class="menu"><ul><li><a href="https://arduinolab.wordpress.com/">Inicio</a></li><li class="page_item page-item-848"><a href="https://arduinolab.wordpress.com/acerca-de-mi/">Acerca de mí</a></li><li class="page_item page-item-2"><a href="https://arduinolab.wordpress.com/about/">Acerca del blog</a></li></ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="https://arduinolab.wordpress.com/2012/04/17/arduino-uno-termo-resistencia-lm35-pantalla-ldc-termometro-con-pantalla-lcd/" rel="prev"><span class="meta-nav">←</span> Arduino UNO + termo-resistencia LM35 + pantalla LCD= termómetro con pantalla&nbsp;LCD</a></div>
+					<div class="nav-next"><a href="https://arduinolab.wordpress.com/2012/05/06/el-robot-mas-entretenido-que-he-visto-9-2/" rel="next">El robot más entretenido que he&nbsp;visto! <span class="meta-nav">→</span></a></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-174" class="post-174 post type-post status-publish format-standard hentry category-con-arduino category-ideas-y-prototipos tag-analogos tag-arduino tag-atmega tag-atmel tag-blog tag-codigo tag-circuitos tag-colombia tag-como-hacer tag-de tag-dos tag-electronica tag-experimentos tag-hardware tag-independientemente tag-ingenieria tag-leds-motor tag-libre tag-placa tag-protoboard tag-prototipos tag-proyectos tag-servo tag-software tag-tacometro tag-terminos tag-y">
+											<h2 class="entry-title"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/" rel="bookmark">Un tacómetro? Sí, así es, un tacómetro con&nbsp;Arduino</a></h2>					
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Publicado el</span> <a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/" title="9:12 PM" rel="bookmark"><span class="entry-date">25 de abril de 2012</span></a>						<span class="by-author"><span class="sep"> por</span> <span class="author vcard"><a class="url fn n" href="https://arduinolab.wordpress.com/author/nosoybob/" title="Lee todas las entradas de nosoybob" rel="author">nosoybob</a></span> </span>					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p>Para aquellos que no saben qué es un tacómetro.</p>
+<p>-Un tacómetro es un dispositivo que se usa para medir las revoluciones por minuto (RPM) y revoluciones por segundo (RPS), son muy comunes en los vehículos como motos, carros, aviones, lanchas etc…</p>
+<p>En un vehículo a motor de combustión interna de qué sirve, básicamente sabemos que la gasolina al quemarse produce calor (si es obvio, pero es un concepto necesario) en el momento en que&nbsp;presionamos&nbsp;el acelerador las revoluciones (giros por minuto, ó segundo del motor) en el momento en que esto sucede la temperatura del motor aumenta, ahora, en todos los tacómetros hay unas líneas rojas conocidas como “zona roja”, esa zona es donde si mantenemos el motor en ese punto constantemente se va a recalentar lo cual puede causar grandes daños en el mismo.</p>
+<p>Pero bueno, para no salirnos del tema, el proyecto de hoy es un tacómetro usando Arduino el cual es muy simple.</p>
+<p>Los resultados de éste se pueden ver en el monitor serial.</p>
+<p>Lo primero son los componentes.</p>
+<p>Para esto necesitaremos un LED (rojo en mi caso), un fotodiodo ó fototransistor, dos resistencias de 220 Ohm, un protoboard, algunos cables y&nbsp;por supuesto&nbsp;nuestra Arduino.</p>
+<p>El esquema.</p>
+<p><a href="https://arduinolab.files.wordpress.com/2012/04/esquema-tacometro-blog1.jpg"><img class="size-full wp-image" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/esquema-tacometro-blog1.jpg" alt="Image"></a></p>
+<p><a href="https://arduinolab.files.wordpress.com/2012/04/dscn3565.jpg"><img class="size-full wp-image" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/dscn3565.jpg" alt="Image"></a></p>
+<p>Y el código<img draggable="false" class="emoji" alt="😀" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/1f600.svg"></p>
+<p>//<br>
+// This example shows one way of creating an optoswitch<br>
+// using an IR LED as emiter and an IR LED receiver as<br>
+// light sensor.<br>
+// On this case it acts as a tachometer to count the<br>
+// revolutions per second of an aeromodelism plane’s<br>
+// propeller.<br>
+//<br>
+// + GROUND +GROUND<br>
+// | |<br>
+// &lt; &lt;<br>
+// &gt; 220 ohm resistor &gt; 220 omh resistor<br>
+// &lt; &lt;<br>
+// | |<br>
+// | |<br>
+// —– —–<br>
+// / \ &gt;&gt;IR LED emiter &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; / \ IR LED receiver<br>
+// —– —–<br>
+// | |<br>
+// | |<br>
+// + +5VCD + ANALOG INPUT 0<br>
+//</p>
+<p>int val;<br>
+long last=0;<br>
+int stat=LOW;<br>
+int stat2;<br>
+int contar=0;</p>
+<p>int sens=75; // this value indicates the limit reading between dark and light,<br>
+// it has to be tested as it may change acording on the<br>
+// distance the leds are placed.<br>
+int nPalas=2; // the number of blades of the propeller</p>
+<p>int milisegundos=500; // the time it takes each reading<br>
+void setup()<br>
+{<br>
+<span class="skimlinks-unlinked">Serial.begin(9600</span>);<br>
+pinMode(13,OUTPUT);<br>
+}</p>
+<p>void loop()<br>
+{<br>
+val=analogRead(0);<br>
+if(val&lt;sens)<br>
+stat=LOW;<br>
+else<br>
+stat=HIGH;<br>
+digitalWrite(13,stat); //as iR light is invisible for us, the led on pin 13<br>
+//indicate the state of the circuit.</p>
+<p>if(stat2!=stat){ //counts when the state change, thats from (dark to light) or<br>
+//from (light to dark), remmember that IR light is invisible for us.<br>
+contar++;<br>
+stat2=stat;<br>
+}<br>
+if(millis()-last&gt;=milisegundos){<br>
+double rps=((double)contar/nPalas)/2.0*1000.0/milisegundos;<br>
+double rpm=((double)contar/nPalas)/2.0*60000.0/(milisegundos);<br>
+<span class="skimlinks-unlinked">Serial.print((contar/2.0));Serial.print</span>(” RPS “);<span class="skimlinks-unlinked">Serial.print(rps</span>);<br>
+<span class="skimlinks-unlinked">Serial.print</span>(” RPM”);<span class="skimlinks-unlinked">Serial.print(rpm);Serial.print</span>(” VAL “);Serial.println(val);<br>
+contar=0;<br>
+last=millis();<br>
+}<br>
+}</p>
+		<div class="wpcnt">
+			<div class="wpa wpmrec">
+				<a class="wpa-about" href="https://wordpress.com/about-these-ads/" rel="nofollow">Acerca de estos anuncios</a>
+				<div class="u">
+					<script type="text/javascript">
+					(function(g){g.__ATA.initAd({sectionId:26942, width:300, height:250});})(window);
+					</script><div id="automattic-id-7892" data-section="26942" style="width:300px; height:250px;"><iframe width="300" height="250" style="border:none;width:300px;height:250px;" frameborder="0" scrolling="no" name="fif_slot_automattic-id-_automattic-id-7892" id="fif_slot_automattic-id-_automattic-id-7892" src="javascript:&quot;&lt;html&gt;&lt;body style=&#39;background:transparent;margin:0%;&#39;&gt;&lt;/body&gt;&lt;/html&gt;&quot;" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource.html"></iframe></div>
+				</div>
+			</div>
+		</div><div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-174" class="share-twitter sd-button share-icon" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?share=twitter&amp;nb=1" target="_blank" title="Haz clic para compartir en Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-174" class="share-facebook sd-button share-icon" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?share=facebook&amp;nb=1" target="_blank" title="Comparte en Facebook"><span>Facebook<span class="share-count">6</span></span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-loaded" id="like-post-wrapper-33780178-174-582bd1b21ea0e" data-src="//widgets.wp.com/likes/#blog_id=33780178&amp;post_id=174&amp;origin=arduinolab.wordpress.com&amp;obj_id=33780178-174-582bd1b21ea0e" data-name="like-post-frame-33780178-174-582bd1b21ea0e"><h3 class="sd-title">Me gusta:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px; display: none;"><span class="button"><span>Me gusta</span></span> <span class="loading">Cargando...</span></div><iframe class="post-likes-widget jetpack-likes-widget" name="like-post-frame-33780178-174-582bd1b21ea0e" height="55px" width="100%" frameborder="0" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource(10).html"></iframe><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div id="jp-relatedposts" class="jp-relatedposts" style="display: block;">
+	<h3 class="jp-relatedposts-headline"><em>Relacionado</em></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-minimal"><p class="jp-relatedposts-post jp-relatedposts-post0" data-post-id="73" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://arduinolab.wordpress.com/2012/04/10/wiring-y-arduino-dos-ambientes-muy-parecidos-6/" title="Wiring y Arduino; dos ambientes muy parecidos...
+
+Decidí hacer un simple semáforo usando el IDE de Arduino y Wiring. Me dí cuenta de que ambos funcionan exactamente igual, es decir que el lenguaje que se usa para escribir los códigos es el mismo, esto quiere decir que ya teniendo conocimientos en Arduino se puede empezar a usar…" rel="nofollow" data-origin="174" data-position="0">Wiring y Arduino; dos ambientes muy parecidos...</a></span><span class="jp-relatedposts-post-context">En "Con Arduino"</span></p><p class="jp-relatedposts-post jp-relatedposts-post1" data-post-id="103" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://arduinolab.wordpress.com/2012/04/16/arduino-con-termo-resistencia-lm35-6/" title="Arduino con termo-resistencia LM35
+
+El LM35 es una termo-resistencia, esto quiere decir que varía el voltaje se salida según la temperatura. El LM35 viene en un paquete simple tipo transistor, y tiene tres pines: el de la izquierda es V+ centro es señal o Vo y derecha es tierra. Tiene una precisión de 0,1°C…" rel="nofollow" data-origin="174" data-position="1">Arduino con termo-resistencia LM35</a></span><span class="jp-relatedposts-post-context">En "Con Arduino"</span></p><p class="jp-relatedposts-post jp-relatedposts-post2" data-post-id="512" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://arduinolab.wordpress.com/2012/06/19/termostato-con-temperatura-en-el-monitor-serial/" title="Termostato con temperatura en el monitor Serial
+
+Ésta vez cambié el código bastante, añadí la parte que permite ver la temperatura además de la lectura análoga en el monitor Serial de Arduino. Las partes necesarias no han cambiado; Una Arduino, Termo-resistencia LM35, un LED cualquier color, una resistencia de 100 Ohm, protoboard, cables y el cable USB…" rel="nofollow" data-origin="174" data-position="2">Termostato con temperatura en el monitor Serial</a></span><span class="jp-relatedposts-post-context">En "Con Arduino"</span></p></div></div></div>											</div><!-- .entry-content -->
+
+
+					<div class="entry-utility">
+												Esta entrada fue publicada en <a href="https://arduinolab.wordpress.com/category/con-arduino/" rel="category tag">Con Arduino</a>, <a href="https://arduinolab.wordpress.com/category/ideas-y-prototipos/" rel="category tag">Ideas y prototipos</a> y etiquetada <a href="https://arduinolab.wordpress.com/tag/analogos/" rel="tag">análogos</a>, <a href="https://arduinolab.wordpress.com/tag/arduino/" rel="tag">Arduino</a>, <a href="https://arduinolab.wordpress.com/tag/atmega/" rel="tag">Atmega</a>, <a href="https://arduinolab.wordpress.com/tag/atmel/" rel="tag">Atmel</a>, <a href="https://arduinolab.wordpress.com/tag/blog/" rel="tag">Blog</a>, <a href="https://arduinolab.wordpress.com/tag/codigo/" rel="tag">Código</a>, <a href="https://arduinolab.wordpress.com/tag/circuitos/" rel="tag">circuitos</a>, <a href="https://arduinolab.wordpress.com/tag/colombia/" rel="tag">Colombia</a>, <a href="https://arduinolab.wordpress.com/tag/como-hacer/" rel="tag">Como hacer</a>, <a href="https://arduinolab.wordpress.com/tag/de/" rel="tag">de</a>, <a href="https://arduinolab.wordpress.com/tag/dos/" rel="tag">Dos</a>, <a href="https://arduinolab.wordpress.com/tag/electronica/" rel="tag">Electrónica</a>, <a href="https://arduinolab.wordpress.com/tag/experimentos/" rel="tag">experimentos</a>, <a href="https://arduinolab.wordpress.com/tag/hardware/" rel="tag">hardware</a>, <a href="https://arduinolab.wordpress.com/tag/independientemente/" rel="tag">Independientemente</a>, <a href="https://arduinolab.wordpress.com/tag/ingenieria/" rel="tag">ingeniería</a>, <a href="https://arduinolab.wordpress.com/tag/leds-motor/" rel="tag">leds. motor</a>, <a href="https://arduinolab.wordpress.com/tag/libre/" rel="tag">libre</a>, <a href="https://arduinolab.wordpress.com/tag/placa/" rel="tag">Placa</a>, <a href="https://arduinolab.wordpress.com/tag/protoboard/" rel="tag">protoboard</a>, <a href="https://arduinolab.wordpress.com/tag/prototipos/" rel="tag">prototipos</a>, <a href="https://arduinolab.wordpress.com/tag/proyectos/" rel="tag">proyectos</a>, <a href="https://arduinolab.wordpress.com/tag/servo/" rel="tag">Servo</a>, <a href="https://arduinolab.wordpress.com/tag/software/" rel="tag">software</a>, <a href="https://arduinolab.wordpress.com/tag/tacometro/" rel="tag">Tacómetro</a>, <a href="https://arduinolab.wordpress.com/tag/terminos/" rel="tag">Términos</a>, <a href="https://arduinolab.wordpress.com/tag/y/" rel="tag">y</a>. Guarda el <a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/" title="Enlace Permanente a Un tacómetro? Sí, así es, un tacómetro con Arduino" rel="bookmark">enlace permanente</a>.											</div><!-- .entry-utility -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="https://arduinolab.wordpress.com/2012/04/17/arduino-uno-termo-resistencia-lm35-pantalla-ldc-termometro-con-pantalla-lcd/" rel="prev"><span class="meta-nav">←</span> Arduino UNO + termo-resistencia LM35 + pantalla LCD= termómetro con pantalla&nbsp;LCD</a></div>
+					<div class="nav-next"><a href="https://arduinolab.wordpress.com/2012/05/06/el-robot-mas-entretenido-que-he-visto-9-2/" rel="next">El robot más entretenido que he&nbsp;visto! <span class="meta-nav">→</span></a></div>
+				</div><!-- #nav-below -->
+
+				
+			<div id="comments">
+
+
+			<h3 id="comments-title">29 respuestas a <em>Un tacómetro? Sí, así es, un tacómetro con&nbsp;Arduino</em></h3>
+
+
+			<ol class="commentlist">
+					<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-17">
+		<div id="comment-17">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/0c8f7d14442ded8b3b9f08a48298b61e" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-0c8f7d14442ded8b3b9f08a48298b61e-0">				<cite class="fn">NIC</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-17">
+				27 de julio de 2012 en 11:23 AM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>la verdad no entendi como con ese programa pudiste hacerlo andar… modificaste el programa?</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=17#respond" onclick="return addComment.moveForm( &quot;comment-17&quot;, &quot;17&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a NIC">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nosoybob bypostauthor odd alt depth-2 highlander-comment" id="li-comment-18">
+		<div id="comment-18">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/c561fe9fa2aa363504ef4d188b785866" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-c561fe9fa2aa363504ef4d188b785866-0">				<cite class="fn"><a href="https://arduinolab.wordpress.com/" rel="external nofollow" class="url">nosoybob</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-18">
+				27 de julio de 2012 en 11:38 AM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>No se le ha hecho modificación alguna.</p>
+<p>En el hardware o piezas hay dos LED’s uno está conectado a los puertos analógos ese es el sensor el cual debe ser reemplazado por un fotodiodo o foto transistor y el otro debe ser un LED  infrarojo.</p>
+<p>El código no se ha modificado en nada</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=18#respond" onclick="return addComment.moveForm( &quot;comment-18&quot;, &quot;18&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a nosoybob">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="li-comment-22">
+		<div id="comment-22">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/f7c95f594cb4bfaefaa2dad76eca154b" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-f7c95f594cb4bfaefaa2dad76eca154b-0">				<cite class="fn">jose</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-22">
+				16 de octubre de 2012 en 10:26 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>yo tengo una duda pues al  compilar el programa antes de pasarlo al arduino uno me ha marcado varios errores, aun con estos el programa funciona???</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=22#respond" onclick="return addComment.moveForm( &quot;comment-22&quot;, &quot;22&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a jose">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nosoybob bypostauthor odd alt depth-2 highlander-comment" id="li-comment-23">
+		<div id="comment-23">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/c561fe9fa2aa363504ef4d188b785866" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-c561fe9fa2aa363504ef4d188b785866-1">				<cite class="fn"><a href="https://arduinolab.wordpress.com/" rel="external nofollow" class="url">nosoybob</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-23">
+				16 de octubre de 2012 en 10:48 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>¿Qué clase de errores? Y ¿Qué versión de Arduino usas?</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=23#respond" onclick="return addComment.moveForm( &quot;comment-23&quot;, &quot;23&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a nosoybob">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-36">
+		<div id="comment-36">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/4024f6769f974b8d52e0b1ec6676b388" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-4024f6769f974b8d52e0b1ec6676b388-0">				<cite class="fn">oso</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-36">
+				23 de enero de 2013 en 3:19 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>esto  no sirve</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=36#respond" onclick="return addComment.moveForm( &quot;comment-36&quot;, &quot;36&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a oso">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nosoybob bypostauthor odd alt depth-2 highlander-comment" id="li-comment-37">
+		<div id="comment-37">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/c561fe9fa2aa363504ef4d188b785866" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-c561fe9fa2aa363504ef4d188b785866-2">				<cite class="fn"><a href="https://arduinolab.wordpress.com/" rel="external nofollow" class="url">nosoybob</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-37">
+				23 de enero de 2013 en 8:47 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>¿Ya lo probaste? </p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=37#respond" onclick="return addComment.moveForm( &quot;comment-37&quot;, &quot;37&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a nosoybob">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="li-comment-45">
+		<div id="comment-45">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/af81609ba889bc1989fe1be94f5cbe08" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-af81609ba889bc1989fe1be94f5cbe08-0">				<cite class="fn">josh</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-45">
+				3 de marzo de 2013 en 11:26 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>En este renglón marca un error:<br>
+“<span class="skimlinks-unlinked">Serial.print((contar/2.0));Serial.print</span>(” RPS “);<span class="skimlinks-unlinked">Serial.print(rps</span>);”<br>
+quiero saber que se debe eso o como se puede solucionar!!</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=45#respond" onclick="return addComment.moveForm( &quot;comment-45&quot;, &quot;45&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a josh">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nosoybob bypostauthor odd alt depth-2 highlander-comment" id="li-comment-46">
+		<div id="comment-46">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/c561fe9fa2aa363504ef4d188b785866" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-c561fe9fa2aa363504ef4d188b785866-3">				<cite class="fn"><a href="https://arduinolab.wordpress.com/" rel="external nofollow" class="url">nosoybob</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-46">
+				4 de marzo de 2013 en 12:18 AM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>¿Que versión estás usando? Y has hecho algún cambio, si te queda más fácil mandame el código por correo y el error en específico.</p>
+<p>Mi e-mail: <a href="mailto:ardulab@gmail.com">ardulab@gmail.com</a></p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=46#respond" onclick="return addComment.moveForm( &quot;comment-46&quot;, &quot;46&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a nosoybob">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even depth-2 highlander-comment" id="li-comment-126">
+		<div id="comment-126">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/photo.jpg" class="avatar avatar-40" height="40" width="40">				<cite class="fn"><a href="https://plus.google.com/103209869005476010963" rel="external nofollow" class="url">David Alvarado</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-126">
+				30 de marzo de 2014 en 6:33 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>porque esta mal escrito es (“RPS”)</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=126#respond" onclick="return addComment.moveForm( &quot;comment-126&quot;, &quot;126&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a David Alvarado">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nosoybob bypostauthor odd alt depth-3 highlander-comment" id="li-comment-127">
+		<div id="comment-127">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/c561fe9fa2aa363504ef4d188b785866" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-c561fe9fa2aa363504ef4d188b785866-4">				<cite class="fn"><a href="https://arduinolab.wordpress.com/" rel="external nofollow" class="url">nosoybob</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-127">
+				30 de marzo de 2014 en 7:12 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Porque cuando no lleva comillas es una variable a escribir. Las comillas se usan cuando se quiere escribir una palabra o texto en el monitor serial o una pantalla.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even depth-2 highlander-comment" id="li-comment-206">
+		<div id="comment-206">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/a51f9eaa29928fd6e1f7da7ab0fa6e01" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-a51f9eaa29928fd6e1f7da7ab0fa6e01-0">				<cite class="fn">Carlos A.</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-206">
+				17 de junio de 2015 en 1:32 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>separa los <span class="skimlinks-unlinked">Serial.print</span> por renglones mejor, y borra el ” RPS ” y escribelo de nuevo, las comillas deveran ponerce de color azul. ahh y tambien los <span class="skimlinks-unlinked">Serial.print</span> que imprimiran variables como rps, se le agregran un ln, asi Serial.println(rps);<br>
+saludos</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=206#respond" onclick="return addComment.moveForm( &quot;comment-206&quot;, &quot;206&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a Carlos A.">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1 highlander-comment" id="li-comment-52">
+		<div id="comment-52">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/75c58fd8e90aabfec8fa722d290c9905" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-75c58fd8e90aabfec8fa722d290c9905-0">				<cite class="fn">Micael</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-52">
+				31 de marzo de 2013 en 7:12 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>El problema es que solo las comillas estan mal, hay que cambiarlas por las comunes osea el codigo deberia quedar asi:</p>
+<p><span class="skimlinks-unlinked">Serial.print(contar/2.0</span>);<br>
+    <span class="skimlinks-unlinked">Serial.print</span>(” RPS “);<br>
+    <span class="skimlinks-unlinked">Serial.print(rps</span>);<br>
+    <span class="skimlinks-unlinked">Serial.print</span>(” RPM”);<br>
+    <span class="skimlinks-unlinked">Serial.print(rpm</span>);<br>
+    <span class="skimlinks-unlinked">Serial.print</span>(” VAL “);<br>
+    Serial.println(val);</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=52#respond" onclick="return addComment.moveForm( &quot;comment-52&quot;, &quot;52&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a Micael">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment even depth-2 highlander-comment" id="li-comment-53">
+		<div id="comment-53">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/75c58fd8e90aabfec8fa722d290c9905" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-75c58fd8e90aabfec8fa722d290c9905-1">				<cite class="fn">Micael</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-53">
+				31 de marzo de 2013 en 7:12 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>La pagina misma cambia el formato de las comillas, cambienlas ustedes.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=53#respond" onclick="return addComment.moveForm( &quot;comment-53&quot;, &quot;53&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a Micael">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt depth-2 highlander-comment" id="li-comment-132">
+		<div id="comment-132">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource(4)" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-false-0">				<cite class="fn">Angel Karim</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-132">
+				2 de abril de 2014 en 11:37 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>si es verdad gracias</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=132#respond" onclick="return addComment.moveForm( &quot;comment-132&quot;, &quot;132&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a Angel Karim">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="li-comment-59">
+		<div id="comment-59">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/cb3561c92e463efc3a26f4118b47c22c" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-cb3561c92e463efc3a26f4118b47c22c-0">				<cite class="fn">Alejandro</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-59">
+				11 de junio de 2013 en 12:49 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Este proyecto necesita más información: Máxima medición de RPM? diagrama y lista de componentes? ajustes?. La falta de información demerita el proyecto.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=59#respond" onclick="return addComment.moveForm( &quot;comment-59&quot;, &quot;59&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a Alejandro">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nosoybob bypostauthor odd alt depth-2 highlander-comment" id="li-comment-60">
+		<div id="comment-60">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/c561fe9fa2aa363504ef4d188b785866" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-c561fe9fa2aa363504ef4d188b785866-5">				<cite class="fn"><a href="https://arduinolab.wordpress.com/" rel="external nofollow" class="url">nosoybob</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-60">
+				11 de junio de 2013 en 3:37 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>El código no fue escrito por mi, lo tomé de internet, pero es Open Source, si quieres agregarle algo más no hay problema alguno.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=60#respond" onclick="return addComment.moveForm( &quot;comment-60&quot;, &quot;60&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a nosoybob">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-80">
+		<div id="comment-80">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/f57c0fbc8c468c54edc37faddb1458bc" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-f57c0fbc8c468c54edc37faddb1458bc-0">				<cite class="fn">jumazeal de toluca</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-80">
+				5 de septiembre de 2013 en 6:19 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>queridos ardunautas yo he utilzado este codigo tal y como esta mas algunos agregados y he logrado hacer el rpm pero para indicar los km x hora, el lector de las palas lo realizo independiente de la placa de arduino, con otra fuente y lo despliego en tres digitos de siete segmentos controlados por un 595 y este por arduino, el sensor de las palas sigue siendo la entrada cero analogica, y trabaja muy bien, este proyecto es para mi coche, y claro me costo unos meses de estudio y pruebas, con sus respectivos errores y desvelos, esta casi terminado, solo me faltan unos pequeños detalles, si las cosas fueran faciles cualquiera las haria.</p>
+<p>jumazeal</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=80#respond" onclick="return addComment.moveForm( &quot;comment-80&quot;, &quot;80&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a jumazeal de toluca">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="li-comment-87">
+		<div id="comment-87">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/2e2ebf5ae7407929fbc540827bca48ca" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-2e2ebf5ae7407929fbc540827bca48ca-0">				<cite class="fn">ALEX</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-87">
+				24 de septiembre de 2013 en 10:17 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>EN EL SIMULADO APARECE EN EL PIN 13 Y EL ARMADO EN EL AREF PORQUE ESO Y NO TIENE GND????</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=87#respond" onclick="return addComment.moveForm( &quot;comment-87&quot;, &quot;87&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a ALEX">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nosoybob bypostauthor even depth-2 highlander-comment" id="li-comment-88">
+		<div id="comment-88">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/c561fe9fa2aa363504ef4d188b785866" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-c561fe9fa2aa363504ef4d188b785866-6">				<cite class="fn"><a href="https://arduinolab.wordpress.com/" rel="external nofollow" class="url">nosoybob</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-88">
+				25 de septiembre de 2013 en 9:08 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Esta claramente conectado a tierra y el pin AREF no está haciendo nada porque simplemente no hay nada conectado allí</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=88#respond" onclick="return addComment.moveForm( &quot;comment-88&quot;, &quot;88&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a nosoybob">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1 highlander-comment" id="li-comment-128">
+		<div id="comment-128">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource(4)" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-false-1">				<cite class="fn">Angel Karim</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-128">
+				31 de marzo de 2014 en 10:41 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>hola se puede controlar un motor universal  y a la vez mostrar las RPM en un lcd, te lo agradecería mucho</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=128#respond" onclick="return addComment.moveForm( &quot;comment-128&quot;, &quot;128&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a Angel Karim">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nosoybob bypostauthor even depth-2 highlander-comment" id="li-comment-129">
+		<div id="comment-129">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/c561fe9fa2aa363504ef4d188b785866" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-c561fe9fa2aa363504ef4d188b785866-7">				<cite class="fn"><a href="https://arduinolab.wordpress.com/" rel="external nofollow" class="url">nosoybob</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-129">
+				31 de marzo de 2014 en 10:44 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Si, usando PWM en uno de los pines análogos como el 9</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=129#respond" onclick="return addComment.moveForm( &quot;comment-129&quot;, &quot;129&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a nosoybob">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="li-comment-130">
+		<div id="comment-130">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource(4)" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-false-2">				<cite class="fn">Angel Karim</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-130">
+				2 de abril de 2014 en 11:17 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>muchas gracias bro , lo voy a probar a penas saludos</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=130#respond" onclick="return addComment.moveForm( &quot;comment-130&quot;, &quot;130&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a Angel Karim">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment even depth-2 highlander-comment" id="li-comment-131">
+		<div id="comment-131">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource(4)" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-false-3">				<cite class="fn">Angel Karim</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-131">
+				2 de abril de 2014 en 11:25 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>me salio este error :<br>
+sketch_apr02a:38: error: stray ‘\’ in program<br>
+sketch_apr02a.ino: In function ‘void loop()’:<br>
+sketch_apr02a:37: error: ‘u201d’ was not declared in this scope<br>
+sketch_apr02a:38: error: expected `)’ before ‘RPM’<br>
+sketch_apr02a:38: error: expected `)’ before ‘VAL’<br>
+saludo</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=131#respond" onclick="return addComment.moveForm( &quot;comment-131&quot;, &quot;131&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a Angel Karim">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nosoybob bypostauthor odd alt depth-3 highlander-comment" id="li-comment-133">
+		<div id="comment-133">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/c561fe9fa2aa363504ef4d188b785866" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-c561fe9fa2aa363504ef4d188b785866-8">				<cite class="fn"><a href="https://arduinolab.wordpress.com/" rel="external nofollow" class="url">nosoybob</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-133">
+				2 de abril de 2014 en 11:43 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Veré que puedo hacer, por ahora mi computador principal está dañado y no tengo acceso a Arduino.</p>
+<p>En cuanto pueda veré de que se trata</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-134">
+		<div id="comment-134">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource(4)" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-false-4">				<cite class="fn">Angel Karim</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-134">
+				3 de abril de 2014 en 1:39 AM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Resuelto muchas gracias eran las comillas muchas gracias, me falta el pwm pero ando en eso saludos</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=134#respond" onclick="return addComment.moveForm( &quot;comment-134&quot;, &quot;134&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a Angel Karim">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="li-comment-161">
+		<div id="comment-161">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/44a6152bbdd240fb8c12e8280844f54f" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-44a6152bbdd240fb8c12e8280844f54f-0">				<cite class="fn">mauricio</cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-161">
+				14 de octubre de 2014 en 2:47 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Excelente proyecto, como podria hacer esto pero mandando la señal para registras las rpm en Labview?</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=161#respond" onclick="return addComment.moveForm( &quot;comment-161&quot;, &quot;161&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a mauricio">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nosoybob bypostauthor even depth-2 highlander-comment" id="li-comment-170">
+		<div id="comment-170">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/c561fe9fa2aa363504ef4d188b785866" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-c561fe9fa2aa363504ef4d188b785866-9">				<cite class="fn"><a href="https://arduinolab.wordpress.com/" rel="external nofollow" class="url">nosoybob</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-170">
+				20 de noviembre de 2014 en 12:14 AM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>No lo sé. No me es familiar Labview.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=170#respond" onclick="return addComment.moveForm( &quot;comment-170&quot;, &quot;170&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a nosoybob">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1 highlander-comment" id="li-comment-185">
+		<div id="comment-185">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/picture" class="avatar avatar-40" height="40" width="40">				<cite class="fn"><a href="http://www.facebook.com/100000614243209" rel="external nofollow" class="url">Imt Mario Fernando Blanco López</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-185">
+				20 de marzo de 2015 en 9:15 AM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Una pregunta disculpami ignorancia soy nuevo en el tema, como lo implemento ya fisicamente para medir las revoluciones de un motor electrico?</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=185#respond" onclick="return addComment.moveForm( &quot;comment-185&quot;, &quot;185&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a Imt Mario Fernando Blanco López">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-nosoybob bypostauthor even depth-2 highlander-comment" id="li-comment-186">
+		<div id="comment-186">
+			<div class="comment-author vcard">
+				<img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/c561fe9fa2aa363504ef4d188b785866" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-c561fe9fa2aa363504ef4d188b785866-10">				<cite class="fn"><a href="https://arduinolab.wordpress.com/" rel="external nofollow" class="url">nosoybob</a></cite> <span class="says">dijo:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-186">
+				21 de marzo de 2015 en 12:46 PM</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>El problema con este proyecto es que el código presenta muchos errores.</p>
+<p>Llevo un tiempo tratando de solucionar los problemas pero por cuestión de tiempo no he podido</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/?replytocom=186#respond" onclick="return addComment.moveForm( &quot;comment-186&quot;, &quot;186&quot;, &quot;respond&quot;, &quot;174&quot; )" aria-label="Responder a nosoybob">Responder</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+
+
+	
+
+				<div id="respond" class="comment-respond js">
+			<h3 id="reply-title" class="comment-reply-title">Responder <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#respond" style="display:none;">Cancelar respuesta</a></small></h3>				<form action="https://arduinolab.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+					<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="7231d60d2c"><input type="hidden" name="_wp_http_referer" value="/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/">
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest">
+
+<div class="comment-form-field comment-textarea">
+	
+	<div id="comment-form-comment"><textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; text-decoration: none; word-spacing: 0px; text-indent: 0px; line-height: 24px; width: 618px;" class="autosizejs "></textarea><textarea id="comment" name="comment" title="Introduce aquí tu comentario..." placeholder="Introduce aquí tu comentario..." style="height: 44px; overflow: hidden; word-wrap: break-word; resize: none;"></textarea></div>
+</div>
+
+<div id="comment-form-identity" style="display: none;">
+
+	<div id="comment-form-nascar">
+		<p>Introduce tus datos o haz clic en un icono para iniciar sesión:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-form-guest" id="postas-guest" title="Invitado">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource(11).html" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/ad516503a11cd5ca435acc9bb6523536" alt="Gravatar" width="25" class="no-grav">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Correo electrónico <span class="required">(necesario)</span> <span class="nopublish">(La dirección no se hará pública)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Nombre <span class="required">(necesario)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Web</label>
+					<div class="comment-form-input"><input id="url" name="url" type="url" value=""></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/ad516503a11cd5ca435acc9bb6523536" alt="Logo de WordPress.com" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="">
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> Estás comentando usando tu cuenta de <span class="skimlinks-unlinked">WordPress.com</span>. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;wordpress&#39; );">Cerrar&nbsp;sesión</a>&nbsp;/&nbsp;<a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Cambiar</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/ad516503a11cd5ca435acc9bb6523536" alt="Imagen de Twitter" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="">
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> Estás comentando usando tu cuenta de Twitter. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;twitter&#39; );">Cerrar&nbsp;sesión</a>&nbsp;/&nbsp;<a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Cambiar</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/ad516503a11cd5ca435acc9bb6523536" alt="Foto de Facebook" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="">
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> Estás comentando usando tu cuenta de Facebook. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;facebook&#39; );">Cerrar&nbsp;sesión</a>&nbsp;/&nbsp;<a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Cambiar</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/ad516503a11cd5ca435acc9bb6523536" alt="Google+ photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="">
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> Estás comentando usando tu cuenta de Google+. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;googleplus&#39; );">Cerrar&nbsp;sesión</a>&nbsp;/&nbsp;<a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Cambiar</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancelar</a></div>
+		<p>Conectando a %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe" style="display: none;">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notificarme los nuevos comentarios por correo electrónico.</label></p></div>
+
+
+
+
+<p class="form-submit" style="display: none;"><input name="submit" type="submit" id="comment-submit" class="submit" value="Publicar comentario"> <input type="hidden" name="comment_post_ID" value="174" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="7228e55b81"></p>
+<input type="hidden" name="genseq" value="1479266738">
+<p style="display: none;"></p>				<input type="hidden" id="ak_js" name="ak_js" value="1479266753260"></form>
+					</div><!-- #respond -->
+		<div style="clear: both"></div>
+</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+						<ul class="xoxo">
+
+<li id="search-3" class="widget-container widget_search"><h3 class="widget-title">Búsqueda</h3><form role="search" method="get" id="searchform" class="searchform" action="https://arduinolab.wordpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Buscar">
+				</div>
+			</form></li>		<li id="recent-posts-2" class="widget-container widget_recent_entries">		<h3 class="widget-title">Entradas recientes</h3>		<ul>
+					<li>
+				<a href="https://arduinolab.wordpress.com/2014/07/21/monitor-de-temperatura-y-humedad-relativa/">Monitor de temperatura y humedad&nbsp;relativa</a>
+						</li>
+					<li>
+				<a href="https://arduinolab.wordpress.com/2014/04/03/proyecto-a-seguir-y-otras-cosas/">Proyecto a seguir y otras&nbsp;cosas</a>
+						</li>
+					<li>
+				<a href="https://arduinolab.wordpress.com/2014/01/13/control-de-multiples-servos/">Control de múltiples&nbsp;Servos</a>
+						</li>
+					<li>
+				<a href="https://arduinolab.wordpress.com/2013/07/06/fotografia-aerea-con-arduino/">Fotografía aérea con&nbsp;Arduino</a>
+						</li>
+					<li>
+				<a href="https://arduinolab.wordpress.com/2013/06/27/montaje-final-del-termometro/">Montaje final del&nbsp;termómetro</a>
+						</li>
+				</ul>
+		</li>		<li id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">Archivos</h3>		<ul>
+			<li><a href="https://arduinolab.wordpress.com/2014/07/">julio 2014</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2014/04/">abril 2014</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2014/01/">enero 2014</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2013/07/">julio 2013</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2013/06/">junio 2013</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2013/04/">abril 2013</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2013/03/">marzo 2013</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2013/02/">febrero 2013</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2013/01/">enero 2013</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2012/12/">diciembre 2012</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2012/11/">noviembre 2012</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2012/10/">octubre 2012</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2012/09/">septiembre 2012</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2012/08/">agosto 2012</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2012/07/">julio 2012</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2012/06/">junio 2012</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2012/05/">mayo 2012</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2012/04/">abril 2012</a></li>
+	<li><a href="https://arduinolab.wordpress.com/2012/03/">marzo 2012</a></li>
+		</ul>
+		</li><li id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">Categorías</h3>		<ul>
+	<li class="cat-item cat-item-92065419"><a href="https://arduinolab.wordpress.com/category/con-arduino/">Con Arduino</a>
+</li>
+	<li class="cat-item cat-item-23312"><a href="https://arduinolab.wordpress.com/category/descargas/">Descargas</a>
+</li>
+	<li class="cat-item cat-item-92065361"><a href="https://arduinolab.wordpress.com/category/fuera-de-arduino/">Fuera de Arduino</a>
+</li>
+	<li class="cat-item cat-item-70046211"><a href="https://arduinolab.wordpress.com/category/ideas-y-prototipos/">Ideas y prototipos</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://arduinolab.wordpress.com/category/uncategorized/">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-5266017"><a href="https://arduinolab.wordpress.com/category/videos-y-demas/">Vídeos y demás</a>
+</li>
+		</ul>
+</li><li id="blog-stats-2" class="widget-container widget_blog-stats"><h3 class="widget-title">Visitas</h3>		<ul>
+			<li>251,335 Hits</li>
+		</ul>
+		</li><li id="top-posts-4" class="widget-container widget_top-posts"><h3 class="widget-title">Las mejores entradas</h3><ul>				<li>
+										<a href="https://arduinolab.wordpress.com/2012/05/07/controllando-un-servo-con-arduino-y-un-potenciometro-10/" class="bump-view" data-bump-view="tp">
+						Controllando un servo con Arduino y un potenciómetro 					</a>
+									</li>
+							<li>
+										<a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/" class="bump-view" data-bump-view="tp">
+						Un tacómetro? Sí, así es, un tacómetro con Arduino					</a>
+									</li>
+							<li>
+										<a href="https://arduinolab.wordpress.com/2012/11/25/prototipo-de-temporizador-programable-con-arduino/" class="bump-view" data-bump-view="tp">
+						Prototipo de temporizador programable con Arduino					</a>
+									</li>
+							<li>
+										<a href="https://arduinolab.wordpress.com/2012/05/12/controlando-dos-servos-independientemente-con-una-sola-arduino-3-2/" class="bump-view" data-bump-view="tp">
+						Controlando dos Servos independientemente con una sola Arduino					</a>
+									</li>
+							<li>
+										<a href="https://arduinolab.wordpress.com/2012/11/28/idea-para-maquina-expendedora-usando-arduino/" class="bump-view" data-bump-view="tp">
+						Idea para máquina expendedora usando Arduino.					</a>
+									</li>
+							<li>
+										<a href="https://arduinolab.wordpress.com/2012/04/17/arduino-uno-termo-resistencia-lm35-pantalla-ldc-termometro-con-pantalla-lcd/" class="bump-view" data-bump-view="tp">
+						Arduino UNO + termo-resistencia LM35 + pantalla LCD= termómetro con pantalla LCD					</a>
+									</li>
+							<li>
+										<a href="https://arduinolab.wordpress.com/2012/10/23/termometro-con-almacenamiento-en-la-eeprom/" class="bump-view" data-bump-view="tp">
+						Termómetro con almacenamiento en la EEPROM. 					</a>
+									</li>
+							<li>
+										<a href="https://arduinolab.wordpress.com/2012/11/28/movimiento-simultaneo-de-dos-servos-con-arduino/" class="bump-view" data-bump-view="tp">
+						Movimiento simultáneo de dos Servos con Arduino.					</a>
+									</li>
+							<li>
+										<a href="https://arduinolab.wordpress.com/2012/03/13/prototipo-de-semaforo-para-invidentes-usando-arduino-15/" class="bump-view" data-bump-view="tp">
+						Prototipo de Semáforo para invidentes usando Arduino					</a>
+									</li>
+							<li>
+										<a href="https://arduinolab.wordpress.com/2012/11/26/livewire-y-pcbwizard/" class="bump-view" data-bump-view="tp">
+						Livewire y PCBWizard					</a>
+									</li>
+			</ul></li><li id="blog_subscription-3" class="widget-container widget_blog_subscription"><h3 class="widget-title"><label for="subscribe-field">¡Sígueme!</label></h3>
+				<form action="https://subscribe.wordpress.com/" method="post" accept-charset="utf-8" id="subscribe-blog">
+											<p>Sí te gustó mi blog únete a <span class="skimlinks-unlinked">wordpress.com</span> y sígueme para enterarte de los últimos proyectos</p>
+<p>Únete a otros 52 seguidores</p>
+						<p><input type="text" name="email" style="width: 95%; padding: 1px 2px" placeholder="Introduce tu dirección de correo electrónico" value="" id="subscribe-field"></p>
+					
+					<p>
+						<input type="hidden" name="action" value="subscribe">
+						<input type="hidden" name="blog_id" value="33780178">
+						<input type="hidden" name="source" value="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/">
+						<input type="hidden" name="sub-type" value="widget">
+						<input type="hidden" name="redirect_fragment" value="blog_subscription-3">
+						<input type="hidden" id="_wpnonce" name="_wpnonce" value="c5f4aefa73">						<input type="submit" value="SEGUIR">
+					</p>
+				</form>
+			
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+				<a href="https://arduinolab.wordpress.com/" title="ArduinoLab" rel="home">
+					ArduinoLab				</a>
+			</div><!-- #site-info -->
+
+			<div id="site-generator">
+								<a href="https://wordpress.com/?ref=footer_blog">Blog de WordPress.com.</a>
+			</div><!-- #site-generator -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<!--  -->
+<script type="text/javascript" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/gprofiles.js.descarga"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/wpgroho.js.descarga"></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-0c8f7d14442ded8b3b9f08a48298b61e">
+	</div>
+	<div class="grofile-hash-map-c561fe9fa2aa363504ef4d188b785866">
+	</div>
+	<div class="grofile-hash-map-f7c95f594cb4bfaefaa2dad76eca154b">
+	</div>
+	<div class="grofile-hash-map-4024f6769f974b8d52e0b1ec6676b388">
+	</div>
+	<div class="grofile-hash-map-af81609ba889bc1989fe1be94f5cbe08">
+	</div>
+	<div class="grofile-hash-map-d41d8cd98f00b204e9800998ecf8427e">
+	</div>
+	<div class="grofile-hash-map-a51f9eaa29928fd6e1f7da7ab0fa6e01">
+	</div>
+	<div class="grofile-hash-map-75c58fd8e90aabfec8fa722d290c9905">
+	</div>
+	<div class="grofile-hash-map-cb3561c92e463efc3a26f4118b47c22c">
+	</div>
+	<div class="grofile-hash-map-f57c0fbc8c468c54edc37faddb1458bc">
+	</div>
+	<div class="grofile-hash-map-2e2ebf5ae7407929fbc540827bca48ca">
+	</div>
+	<div class="grofile-hash-map-44a6152bbdd240fb8c12e8280844f54f">
+	</div>
+	<div class="grofile-hash-map-03714fd38b68fdfa8e02447ce5eb661a">
+	</div>
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Iniciando sesi\u00f3n\u2026","submittingText":"Publicando comentario\u2026","postCommentText":"Publicar comentario","connectingToText":"Conectando a %s","commentingAsText":"%1$s: Est\u00e1s comentando usando tu cuenta de %2$s.","logoutText":"Cerrar sesi\u00f3n","loginText":"Acceder","connectURL":"https:\/\/arduinolab.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/arduinolab.wordpress.com\/wp-login.php?action=logout&_wpnonce=6663aabd54","homeURL":"https:\/\/arduinolab.wordpress.com\/","postID":"174","gravDefault":"identicon","enterACommentError":"Por favor, introduce un comentario","enterEmailError":"Por favor introduce tu direcci\u00f3n de correo electr\u00f3nico aqu\u00ed","invalidEmailError":"Direcci\u00f3n de correo electr\u00f3nico no v\u00e1lida","enterAuthorError":"Por favor, introduce tu nombre aqu\u00ed","gravatarFromEmail":"Esta imagen se mostrar\u00e1 cuando dejes un comentario. Haz clic para cambiarla.","logInToExternalAccount":"Inicia sesi\u00f3n para usar los datos de una de estas cuentas.","change":"Cambiar","changeAccount":"Cambiar cuenta","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource(5)"></script>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/arduinolab.wordpress.com\/2012\/04\/25\/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2\/":174};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+		<script type="text/javascript" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/form.js.descarga"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var actionbardata = {"siteID":"33780178","siteName":"ArduinoLab","siteURL":"http:\/\/arduinolab.wordpress.com","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/c093a1bea4713a0d6624301e73023f9d?s=36' class='avatar avatar-36' height='36' width='36' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/twentyten","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/arduinolab.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Farduinolab.wordpress.com%2F2012%2F04%2F25%2Fun-tacometro-si-asi-es-un-tacometro-con-arduino-16-2%2F","themeURL":"https:\/\/wordpress.com\/themes\/twentyten\/","xhrURL":"https:\/\/arduinolab.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"aad5aa4abe","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"c5f4aefa73\" \/>","referer":"https:\/\/arduinolab.wordpress.com\/2012\/04\/25\/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2\/","canFollow":"1","statusMessage":"","customizeLink":"https:\/\/arduinolab.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Farduinolab.wordpress.com%2F2012%2F04%2F25%2Fun-tacometro-si-asi-es-un-tacometro-con-arduino-16-2%2F","postID":"174","shortlink":"http:\/\/wp.me\/p2hJLA-2O","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/arduinolab.wordpress.com\/174","i18n":{"view":"Ver sitio","follow":"Seguir","following":"Siguiendo","edit":"Editar","login":"Acceder","signup":"Registrarse","customize":"Personalizar","report":"Denunciar este contenido","themeInfo":"Obtener el tema: Twenty Ten","shortlink":"Copiar enlace corto","copied":"Copiado","followedText":"Las nuevas publicaciones de este sitio aparecer\u00e1n ahora en tu <a href=\"https:\/\/wordpress.com\/\">Lector<\/a>","foldBar":"Contraer esta barra","unfoldBar":"Expandir esta barra","editFollows":"Administrar los sitios que sigo","editSubs":"Gestionar suscripciones","viewReader":"Ver sitio en el Lector","subscribe":"Suscr\u00edbeme","enterEmail":"Introduce tu direcci\u00f3n de correo electr\u00f3nico","followers":"\u00danete a otros 52 seguidores","alreadyUser":"\u00bfYa tienes una cuenta de WordPress.com? <a href=\"https:\/\/arduinolab.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Farduinolab.wordpress.com%2F2012%2F04%2F25%2Fun-tacometro-si-asi-es-un-tacometro-con-arduino-16-2%2F\">Accede ahora<\/a>."}};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"es","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/saved_resource(6)"></script><div id="actionbar" class="actnbr-pub-twentyten actnbr-has-follow"><ul><li class="actnbr-btn actnbr-hidden"> 			    	<a class="actnbr-action actnbr-actn-follow" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/"><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Seguir</span></a> 			    	<div class="actnbr-popover tip tip-top-left actnbr-notice"> 			    		<div class="tip-arrow"></div> 			    		<div class="tip-inner actnbr-follow-bubble"></div> 			    	</div> 			    </li><li class="actnbr-ellipsis actnbr-hidden"> 			  <svg class="gridicon gridicon__ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><circle cx="5" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle></g></svg> 			  <div class="actnbr-popover tip tip-top-left actnbr-more"> 			  	<div class="tip-arrow"></div> 			  	<div class="tip-inner"> 				  <ul> 				    <li class="actnbr-sitename actnbr-hidden"><a href="http://arduinolab.wordpress.com/"><img alt="" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/c093a1bea4713a0d6624301e73023f9d" class="avatar avatar-36" height="36" width="36"> ArduinoLab</a></li> 				   	<li class="actnbr-folded-customize actnbr-hidden"><a href="https://arduinolab.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Farduinolab.wordpress.com%2F2012%2F04%2F25%2Fun-tacometro-si-asi-es-un-tacometro-con-arduino-16-2%2F"><svg class="gridicon gridicon__customize" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M2 6c0-1.505.78-3.08 2-4 0 .845.69 2 2 2 1.657 0 3 1.343 3 3 0 .386-.08.752-.212 1.09.74.594 1.476 1.19 2.19 1.81L8.9 11.98c-.62-.716-1.214-1.454-1.807-2.192C6.753 9.92 6.387 10 6 10c-2.21 0-4-1.79-4-4zm12.152 6.848l1.34-1.34c.607.304 1.283.492 2.008.492 2.485 0 4.5-2.015 4.5-4.5 0-.725-.188-1.4-.493-2.007L18 9l-2-2 3.507-3.507C18.9 3.188 18.225 3 17.5 3 15.015 3 13 5.015 13 7.5c0 .725.188 1.4.493 2.007L3 20l2 2 6.848-6.848c1.885 1.928 3.874 3.753 5.977 5.45l1.425 1.148 1.5-1.5-1.15-1.425c-1.695-2.103-3.52-4.092-5.448-5.977z" data-reactid=".2.1.1:0.1b.0"></path></g></svg><span>Personalizar<span></span></span></a></li> 				    <li class="actnbr-folded-follow actnbr-hidden"><a class="actnbr-action actnbr-actn-follow" href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/"><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Seguir</span></a></li> 						<li class="actnbr-signup actnbr-hidden"><a href="https://wordpress.com/start/">Registrarse</a></li> 				    <li class="actnbr-login actnbr-hidden"><a href="https://arduinolab.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Farduinolab.wordpress.com%2F2012%2F04%2F25%2Fun-tacometro-si-asi-es-un-tacometro-con-arduino-16-2%2F">Acceder</a></li> 				     				    <li class="actnbr-shortlink actnbr-hidden"><a href="http://wp.me/p2hJLA-2O">Copiar enlace corto</a></li> 				     				     				     				    <li class="actnbr-subs actnbr-hidden"><a href="https://subscribe.wordpress.com/">Gestionar suscripciones</a></li> 				    <li class="actnbr-fold actnbr-hidden"><a href="https://arduinolab.wordpress.com/2012/04/25/un-tacometro-si-asi-es-un-tacometro-con-arduino-16-2/">Contraer esta barra</a></li> 			      </ul> 			    </div> 		      </div> 		    </li> 	      </ul></div>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "arduinolab.wordpress.com";
+	</script>
+	<script type="text/javascript" src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/725X1342.skimlinks.js.descarga"></script>		<iframe src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/master.html" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+		<div id="likes-other-gravatars"><div class="likes-text">A <span>%d</span> blogueros les gusta esto:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script>
+			var _comscore = _comscore || [];
+			_comscore.push({
+				c1: "2",
+				c2: "7518284"
+			});
+			(function() {
+				var s = document.createElement("script"),
+					el = document.getElementsByTagName("script")[0];
+				s.async = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<noscript>
+			&lt;p class="robots-nocontent"&gt;&lt;img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=7518284&amp;c3=&amp;c4=&amp;c5=&amp;c6=&amp;c15=&amp;cv=2.0&amp;cj=1" alt="" style="display:none;" width="1" height="1" /&gt;&lt;/p&gt;
+		</noscript><script src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/w.js.descarga" type="text/javascript" async="" defer=""></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'33780178','blog_tz':'-5','user_lang':'es','blog_lang':'es','user_id':'0'}]);
+_stq.push(['view', {'blog':'33780178','v':'wpcom','tz':'-5','user_id':'0','post':'174','subd':'arduinolab'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWpYP2xZaVBVeHZiOUhkaixZNmFPRGJHeTE5ZSxINXRXfmU0L0Rfb2NhXXFZa0V+TkI5TXpdMHlwSlBsdW5RMlU1PThpZH49XXBXdjFkfkErQTNnbllVLy9HbVJzMWM/biVQcmIteWx3cWR4P3R0Ui1EbFJRT1Y1UTR3QVhUVkJIaUJSW2hsMHRDR0NbZ1hTSHlONV09dUFtcm5ubnAzUVdxS3NoYXwlTkh4U3pWSSxXQ21fL2IzR2xaJn5qPUQrZysrR1kmNExxZTcsR2c5TVNGLXBqaEElTnB6T0w2VnhSeGFDc29VZlIyeT0mN2JxOC5OWVplRnF4VjJ6dGVpaUV5bGIzJjdSLkYmMi93'}]);
+_stq.push([ 'clickTrackerInit', '33780178', '174' ]);
+	</script>
+<noscript>&lt;img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /&gt;</noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+
+<img src="./Un tacómetro_ Sí, así es, un tacómetro con Arduino _ ArduinoLab_files/g.gif" alt=":)" id="wpstats"><span style="border-radius: 2px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased; top: 1136px; left: 314px;">Guardar</span></body></html>

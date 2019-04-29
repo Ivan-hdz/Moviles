@@ -16,7 +16,10 @@ export class Activity2Component implements OnInit {
         this.calc(sh.getObject().A, sh.getObject().B, sh.getObject().C);
     }
     calc(a: number, b: number, c: number) {
-        if((b*b) - (4*a*c) >= 0) {
+        if(a == 0) {
+            this.x1 =( (-c) / b).toString();
+            this.x2 = " - ";
+        } else if((b*b) - (4*a*c) >= 0) {
             this.x1 = ((-b/(2*a)) + ((Math.sqrt((b*b) - (4*a*c))) / (2*a))).toString();
             this.x2 = ((-b/(2*a)) - ((Math.sqrt((b*b) - (4*a*c))) / (2*a))).toString();
         } else {

@@ -1,0 +1,41 @@
+<ScrollView orientation="vertical">
+<StackLayout>
+    <TextField class="input input-field" #correo hint="Correo a consultar / En blanco para consultar todos"></TextField>
+    <Button class="btn btn-active" text="Buscar" (tap)="buscar(correo.text)"></Button>
+
+    <StackLayout *ngFor="let us of buffer$ | async">
+        <StackLayout orientation="horizontal">
+            <Label text="Correo: "></Label>
+            <Label [text]="us.correo"></Label>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <Label text="Nombre: "></Label>
+            <Label [text]="us.nombre"></Label>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <Label text="Primer apellido: "></Label>
+            <Label [text]="us.primerApellido"></Label>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <Label text="Segundo apellido: "></Label>
+            <Label [text]="us.segundoApellido"></Label>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <Label text="Edad: "></Label>
+            <Label [text]="us.edad"></Label>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <Label text="Sexo: "></Label>
+            <Label [text]="us.sexo"></Label>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <Label text="Descripcion: "></Label>
+            <Label [text]="us.descripcion"></Label>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <Button text="Modificar" (tap)="onTapModificar(us)"></Button>
+            <Button text="Eliminar" (tap)="onTapEliminar(us)"></Button>
+        </StackLayout>
+    </StackLayout>
+</StackLayout>
+</ScrollView>

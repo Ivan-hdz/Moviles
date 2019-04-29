@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="es-ES" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="es-ES" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="es-ES" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="es-ES" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+			
+	
+	<link rel="pingback" href="http://www.geekfactory.mx/xmlrpc.php" />
+
+		<!--[if lt IE 9]>
+	<script src="http://www.geekfactory.mx/wp-content/themes/Divi/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<title>Page Not Found - Geek Factory</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v3.0.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="Page Not Found - Geek Factory" />
+<meta property="og:site_name" content="Geek Factory" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Geek Factory &raquo; Feed" href="http://www.geekfactory.mx/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Geek Factory &raquo; RSS de los comentarios" href="http://www.geekfactory.mx/comments/feed/" />
+<!-- This site is powered by Shareaholic - https://shareaholic.com -->
+<script type='text/javascript' data-cfasync='false'>
+  //<![CDATA[
+    _SHR_SETTINGS = {"endpoints":{"local_recs_url":"http:\/\/www.geekfactory.mx\/wp-admin\/admin-ajax.php?action=shareaholic_permalink_related","share_counts_url":"http:\/\/www.geekfactory.mx\/wp-admin\/admin-ajax.php?action=shareaholic_share_counts_api"}};
+  //]]>
+</script>
+<script type='text/javascript'
+        src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js'
+        data-shr-siteid='495174e49b2af25f7da8c730153db3bf'
+        data-cfasync='false'
+        async='async' >
+</script>
+
+<!-- Shareaholic Content Tags -->
+<meta name='shareaholic:site_name' content='Geek Factory' />
+<meta name='shareaholic:language' content='es-ES' />
+<meta name='shareaholic:site_id' content='495174e49b2af25f7da8c730153db3bf' />
+<meta name='shareaholic:wp_version' content='7.8.0.1' />
+
+<!-- Shareaholic Content Tags End -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.geekfactory.mx\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<meta content="Divi v.2.6.4.4" name="generator"/><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crayon-css'  href='http://www.geekfactory.mx/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='http://www.geekfactory.mx/wp-content/plugins/download-manager/assets/font-awesome/css/font-awesome.min.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-bootstrap-css'  href='http://www.geekfactory.mx/wp-content/plugins/download-manager/assets/bootstrap/css/bootstrap.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-front-css'  href='http://www.geekfactory.mx/wp-content/plugins/download-manager/assets/css/front.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='rp-wcdpd-frontend-styles-css'  href='http://www.geekfactory.mx/wp-content/plugins/wc-dynamic-pricing-and-discounts/assets/css/style-frontend.css?ver=1.0.18' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='//www.geekfactory.mx/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=2.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='//www.geekfactory.mx/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=2.5.2' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='//www.geekfactory.mx/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=2.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css'  href='http://www.geekfactory.mx/wp-content/themes/Divi/style.css?ver=2.6.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-css-css'  href='http://www.geekfactory.mx/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes.css?ver=2.6.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-responsive-css-css'  href='http://www.geekfactory.mx/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes_responsive.css?ver=2.6.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='http://www.geekfactory.mx/wp-content/themes/Divi/includes/builder/styles/magnific_popup.css?ver=2.6.4.4' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/www.geekfactory.mx\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Presiona %s para copiar y %s para pegar","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=_2.7.2_beta'></script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-content/plugins/download-manager/assets/bootstrap/js/bootstrap.min.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-content/plugins/download-manager/assets/js/front.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-content/plugins/download-manager/assets/js/chosen.jquery.min.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-content/plugins/wc-dynamic-pricing-and-discounts/assets/js/scripts-frontend.js?ver=1.0.18'></script>
+<meta name="generator" content="WordPress Download Manager 2.8.92" />
+<link rel='https://api.w.org/' href='http://www.geekfactory.mx/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.geekfactory.mx/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.geekfactory.mx/wp-includes/wlwmanifest.xml" /> 
+
+        <script>
+            var wpdm_site_url = 'http://www.geekfactory.mx/';
+            var wpdm_home_url = 'http://www.geekfactory.mx/';
+            var ajax_url = 'http://www.geekfactory.mx/wp-admin/admin-ajax.php';
+        </script>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />		<style id="theme-customizer-css">
+													.woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .woocommerce-message, .woocommerce-error, .woocommerce-info { background: #7EBEC5 !important; }
+			#et_search_icon:hover, .mobile_menu_bar:before, .mobile_menu_bar:after, .et_toggle_slide_menu:after, .et-social-icon a:hover, .et_pb_sum, .et_pb_pricing li a, .et_pb_pricing_table_button, .et_overlay:before, .entry-summary p.price ins, .woocommerce div.product span.price, .woocommerce-page div.product span.price, .woocommerce #content div.product span.price, .woocommerce-page #content div.product span.price, .woocommerce div.product p.price, .woocommerce-page div.product p.price, .woocommerce #content div.product p.price, .woocommerce-page #content div.product p.price, .et_pb_member_social_links a:hover, .woocommerce .star-rating span:before, .woocommerce-page .star-rating span:before, .et_pb_widget li a:hover, .et_pb_filterable_portfolio .et_pb_portfolio_filters li a.active, .et_pb_filterable_portfolio .et_pb_portofolio_pagination ul li a.active, .et_pb_gallery .et_pb_gallery_pagination ul li a.active, .wp-pagenavi span.current, .wp-pagenavi a:hover, .nav-single a, .posted_in a { color: #7EBEC5; }
+			.et_pb_contact_submit, .et_password_protected_form .et_submit_button, .et_pb_bg_layout_light .et_pb_newsletter_button, .comment-reply-link, .form-submit input, .et_pb_bg_layout_light .et_pb_promo_button, .et_pb_bg_layout_light .et_pb_more_button, .woocommerce a.button.alt, .woocommerce-page a.button.alt, .woocommerce button.button.alt, .woocommerce-page button.button.alt, .woocommerce input.button.alt, .woocommerce-page input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce-page #respond input#submit.alt, .woocommerce #content input.button.alt, .woocommerce-page #content input.button.alt, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button { color: #7EBEC5; }
+			.footer-widget h4 { color: #7EBEC5; }
+			.et-search-form, .nav li ul, .et_mobile_menu, .footer-widget li:before, .et_pb_pricing li:before, blockquote { border-color: #7EBEC5; }
+			.et_pb_counter_amount, .et_pb_featured_table .et_pb_pricing_heading, .et_quote_content, .et_link_content, .et_audio_content, .et_pb_post_slider.et_pb_bg_layout_dark, .et_slide_in_menu_container { background-color: #7EBEC5; }
+									a { color: #7EBEC5; }
+											.nav li ul { border-color: #7ebec5; }
+							#top-header, #et-secondary-nav li ul { background-color: #7ebec5; }
+													.et_header_style_centered .mobile_nav .select_page, .et_header_style_split .mobile_nav .select_page, .et_nav_text_color_light #top-menu > li > a, .et_nav_text_color_dark #top-menu > li > a, #top-menu a, .et_mobile_menu li a, .et_nav_text_color_light .et_mobile_menu li a, .et_nav_text_color_dark .et_mobile_menu li a, #et_search_icon:before, .et_search_form_container input, span.et_close_search_field:after, #et-top-navigation .et-cart-info { color: #666666; }
+			.et_search_form_container input::-moz-placeholder { color: #666666; }
+			.et_search_form_container input::-webkit-input-placeholder { color: #666666; }
+			.et_search_form_container input:-ms-input-placeholder { color: #666666; }
+								
+		
+					#top-menu li.current-menu-ancestor > a, #top-menu li.current-menu-item > a,
+			.et_color_scheme_red #top-menu li.current-menu-ancestor > a, .et_color_scheme_red #top-menu li.current-menu-item > a,
+			.et_color_scheme_pink #top-menu li.current-menu-ancestor > a, .et_color_scheme_pink #top-menu li.current-menu-item > a,
+			.et_color_scheme_orange #top-menu li.current-menu-ancestor > a, .et_color_scheme_orange #top-menu li.current-menu-item > a,
+			.et_color_scheme_green #top-menu li.current-menu-ancestor > a, .et_color_scheme_green #top-menu li.current-menu-item > a { color: #7cbec6; }
+							#main-footer { background-color: #2e2e2e; }
+											#main-footer .footer-widget h4 { color: #7EBEC5; }
+							.footer-widget li:before { border-color: #7EBEC5; }
+						#et-footer-nav .bottom-nav li.current-menu-item a { color: #7ebec5; }										
+		
+																														
+		@media only screen and ( min-width: 981px ) {
+																																								.et-fixed-header#top-header, .et-fixed-header#top-header #et-secondary-nav li ul { background-color: #7ebec5; }
+																.et-fixed-header #top-menu a, .et-fixed-header #et_search_icon:before, .et-fixed-header #et_top_search .et-search-form input, .et-fixed-header .et_search_form_container input, .et-fixed-header .et_close_search_field:after, .et-fixed-header #et-top-navigation .et-cart-info { color: #666666 !important; }
+				.et-fixed-header .et_search_form_container input::-moz-placeholder { color: #666666 !important; }
+				.et-fixed-header .et_search_form_container input::-webkit-input-placeholder { color: #666666 !important; }
+				.et-fixed-header .et_search_form_container input:-ms-input-placeholder { color: #666666 !important; }
+										.et-fixed-header #top-menu li.current-menu-ancestor > a,
+				.et-fixed-header #top-menu li.current-menu-item > a { color: #7cbec6 !important; }
+						
+					}
+		@media only screen and ( min-width: 1350px) {
+			.et_pb_row { padding: 27px 0; }
+			.et_pb_section { padding: 54px 0; }
+			.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper { padding-top: 81px; }
+			.et_pb_section.et_pb_section_first { padding-top: inherit; }
+			.et_pb_fullwidth_section { padding: 0; }
+		}
+		@media only screen and ( max-width: 980px ) {
+																				}
+		@media only screen and ( max-width: 767px ) {
+														}
+	</style>
+
+	
+	
+	<style id="module-customizer-css">
+			</style>
+
+			<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+<body class="error404 et_pb_button_helper_class et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+	<div id="page-container">
+
+	
+	
+		<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="http://www.geekfactory.mx/">
+						<img src="http://www.geekfactory.mx/wp-content/uploads/2014/02/Geek-Factory.png" alt="Geek Factory" id="logo" data-height-percentage="54" />
+					</a>
+				</div>
+				<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav et_disable_top_tier"><li id="menu-item-3505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3505"><a href="http://www.geekfactory.mx/">INICIO</a></li>
+<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="http://www.geekfactory.mx/tienda/">TIENDA</a></li>
+<li id="menu-item-5377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5377"><a href="http://www.geekfactory.mx/cursos-de-arduino-en-mexico/">CURSOS</a></li>
+<li id="menu-item-86" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-86"><a href="http://www.geekfactory.mx/category/tutoriales/">TUTORIALES</a>
+<ul class="sub-menu">
+	<li id="menu-item-4264" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4264"><a href="http://www.geekfactory.mx/category/tutoriales/tutoriales-pic/">Tutoriales PIC</a></li>
+	<li id="menu-item-4263" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4263"><a href="http://www.geekfactory.mx/category/tutoriales/tutoriales-eagle/">Tutoriales EAGLE</a></li>
+	<li id="menu-item-4262" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4262"><a href="http://www.geekfactory.mx/category/tutoriales/tutoriales-arduino/">Tutoriales Arduino</a></li>
+	<li id="menu-item-4265" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4265"><a href="http://www.geekfactory.mx/category/tutoriales/">Tutoriales (todos)</a></li>
+</ul>
+</li>
+<li id="menu-item-5376" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5376"><a href="#">INFORMACIÓN</a>
+<ul class="sub-menu">
+	<li id="menu-item-4295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4295"><a href="http://www.geekfactory.mx/como-comprar/">¿CÓMO COMPRAR?</a></li>
+	<li id="menu-item-5430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5430"><a href="http://www.geekfactory.mx/quienes-somos/">¿QUIÉNES SOMOS?</a></li>
+	<li id="menu-item-5378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5378"><a href="http://www.geekfactory.mx/formas-de-pago/">FORMAS DE PAGO</a></li>
+	<li id="menu-item-3438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3438"><a href="http://www.geekfactory.mx/contacto/">CONTACTA</a></li>
+	<li id="menu-item-4321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4321"><a href="http://www.geekfactory.mx/distribuidores-locales-de-arduino/">Distribuidores</a></li>
+	<li id="menu-item-4322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4322"><a href="http://www.geekfactory.mx/enlaces-paginas-de-electronica/">Sitios Amigos</a></li>
+</ul>
+</li>
+<li id="menu-item-3536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3536"><a title="strong" href="http://www.geekfactory.mx/mi-cuenta/">MI CUENTA</a></li>
+</ul>						</nav>
+					
+					<a href="http://www.geekfactory.mx/carro/" class="et-cart-info">
+				<span></span>
+			</a>
+					
+										<div id="et_top_search">
+						<span id="et_search_icon"></span>
+					</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+			<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="http://www.geekfactory.mx/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+		</header> <!-- #main-header -->
+
+		<div id="et-main-area">
+<div id="main-content">
+	<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+				<article id="post-0" class="et_pb_post not_found">
+					<div class="entry">
+<!--If no results are found-->
+	<h1>No se encontraron resultados</h1>
+	<p>La página solicitada no pudo encontrarse. Trate de perfeccionar su búsqueda o utilice la navegación para localizar la entrada.</p>
+</div>
+<!--End if no results are found-->				</article> <!-- .et_pb_post -->
+			</div> <!-- #left-area -->
+
+				<div id="sidebar">
+		<div id="categories-6" class="et_pb_widget widget_categories"><h4 class="widgettitle">Categorías del Blog</h4>		<ul>
+	<li class="cat-item cat-item-14"><a href="http://www.geekfactory.mx/category/arduino/" >Arduino</a>
+</li>
+	<li class="cat-item cat-item-208"><a href="http://www.geekfactory.mx/category/articulos-destacados/" >Artículos Destacados</a>
+</li>
+	<li class="cat-item cat-item-235"><a href="http://www.geekfactory.mx/category/articulos-y-proyectos/" title="En esta categoría encontrarás algunos de los artículos que he escrito, ya sean artículos técnicos separados o artículos que acompañan algunos de los proyectos que he realizado.">Artículos y proyectos</a>
+</li>
+	<li class="cat-item cat-item-236"><a href="http://www.geekfactory.mx/category/circuitos-de-io/" >Circuitos de I/O</a>
+</li>
+	<li class="cat-item cat-item-237"><a href="http://www.geekfactory.mx/category/eagle-2/" title="En esta categoría se agrupan las entradas relacionadas con el software EAGLE de la firma alemana CADSOFT.  Apuntes, trucos y tutoriales sobre este programa se encuentran aqui.">EAGLE</a>
+</li>
+	<li class="cat-item cat-item-220"><a href="http://www.geekfactory.mx/category/ejemplos-para-entrenadora-pic/" >Ejemplos para entrenadora PIC</a>
+</li>
+	<li class="cat-item cat-item-199"><a href="http://www.geekfactory.mx/category/empresa/" >Empresa</a>
+</li>
+	<li class="cat-item cat-item-238"><a href="http://www.geekfactory.mx/category/experimentos/" title="Experimentos variados con circuitos electrónicos. Usualmente los experimentos sirven como preparación para a un proyecto mayor o simplemente como prueba de un determinado hardware/software.">Experimentos</a>
+</li>
+	<li class="cat-item cat-item-240"><a href="http://www.geekfactory.mx/category/hacking/" >Hacking</a>
+</li>
+	<li class="cat-item cat-item-241"><a href="http://www.geekfactory.mx/category/herramientas-de-desarrollo/" >Herramientas de desarrollo</a>
+</li>
+	<li class="cat-item cat-item-242"><a href="http://www.geekfactory.mx/category/herramientas-electronica/" title="Reseñas y recomendaciones sobre herramientas para realizar trabajos en electrónica.">Herramientas Electrónica</a>
+</li>
+	<li class="cat-item cat-item-243"><a href="http://www.geekfactory.mx/category/iluminacion/" >Iluminación</a>
+</li>
+	<li class="cat-item cat-item-244"><a href="http://www.geekfactory.mx/category/informatica-y-equipos/" title="Reseñas y recomendaciones sobre equipos informáticos y piezas de hardware para la PC.">Informática y Equipos</a>
+</li>
+	<li class="cat-item cat-item-245"><a href="http://www.geekfactory.mx/category/librerias/" >Librerías</a>
+</li>
+	<li class="cat-item cat-item-223"><a href="http://www.geekfactory.mx/category/librerias-en-c/" >Librerias en C</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://www.geekfactory.mx/category/microcontroladores-avr/" >Microcontroladores AVR</a>
+</li>
+	<li class="cat-item cat-item-246"><a href="http://www.geekfactory.mx/category/microcontroladores-msp430/" title="Microcontroladores MSP430 de la firma Texas Instruments. Ideales para aplicaciones de bajo consumo de energía. ">Microcontroladores MSP430</a>
+</li>
+	<li class="cat-item cat-item-207"><a href="http://www.geekfactory.mx/category/microcontroladores-pic/" >Microcontroladores PIC</a>
+</li>
+	<li class="cat-item cat-item-247"><a href="http://www.geekfactory.mx/category/microcontroladores-varios/" title="Esta categoría agrupa los posts con contenido sobre microcontroladores en general">Microcontroladores Varios</a>
+</li>
+	<li class="cat-item cat-item-249"><a href="http://www.geekfactory.mx/category/personal/" title="Cuando me sienta con ganas de compartir mis experiencias personales las encontrarás aquí.">Personal</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://www.geekfactory.mx/category/productos-nuevos/" >Productos Nuevos</a>
+</li>
+	<li class="cat-item cat-item-250"><a href="http://www.geekfactory.mx/category/proyetos-interesantes/" title="Proyectos interesantes de cualquier tema que resultan de interés para replicarlos o mejorarlos.">Proyectos Interesantes</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://www.geekfactory.mx/category/radio/" title="Esta categoría contiene posts sobre circuitos que transmiten o reciben señales mediante radiofrecuencia.">Radio</a>
+</li>
+	<li class="cat-item cat-item-152"><a href="http://www.geekfactory.mx/category/raspberry-pi/" >Raspberry Pi</a>
+</li>
+	<li class="cat-item cat-item-251"><a href="http://www.geekfactory.mx/category/redes/" title="Hoy en día las redes de datos forman una parte importante de nuestra vida y de la sociedad. Todo lo relacionado con redes de computadoras y la certificación cisco CCNA.">Redes</a>
+</li>
+	<li class="cat-item cat-item-252"><a href="http://www.geekfactory.mx/category/robotica/" title="Información y proyectos relacionados con el mundo de la robótica.">Robótica</a>
+</li>
+	<li class="cat-item cat-item-253"><a href="http://www.geekfactory.mx/category/software/" title="Información interesante para usuarios y desarrolladores de software.">Software</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="http://www.geekfactory.mx/category/tutoriales/" >Tutoriales</a>
+</li>
+	<li class="cat-item cat-item-734"><a href="http://www.geekfactory.mx/category/tutoriales/tutoriales-arduino/" >Tutoriales Arduino</a>
+</li>
+	<li class="cat-item cat-item-735"><a href="http://www.geekfactory.mx/category/tutoriales/tutoriales-eagle/" >Tutoriales EAGLE</a>
+</li>
+	<li class="cat-item cat-item-748"><a href="http://www.geekfactory.mx/category/tutoriales/tutoriales-pic/" >Tutoriales PIC</a>
+</li>
+	<li class="cat-item cat-item-255"><a href="http://www.geekfactory.mx/category/videojuegos-y-consolas/" title="Todos los posts con información sobre consolas de videojuegos, nuevas tecnologías y hacks aplicados a los videojuegos.">Videojuegos y consolas</a>
+</li>
+		</ul>
+</div> <!-- end .et_pb_widget --><div id="search-5" class="et_pb_widget widget_search"><h4 class="widgettitle">Buscar posts y productos</h4><form role="search" method="get" id="searchform" class="searchform" action="http://www.geekfactory.mx/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div> <!-- end .et_pb_widget --><div id="recent-comments-4" class="et_pb_widget widget_recent_comments"><h4 class="widgettitle">Comentarios Recientes</h4><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='https://aprendiendoarduino.wordpress.com/2016/03/06/firmata/' rel='external nofollow' class='url'>Firmata | Aprendiendo Arduino</a></span> en <a href="http://www.geekfactory.mx/tutoriales/tutoriales-arduino/tutorial-arduino-con-fotoresistencia-ldr/#comment-6190">Tutorial Arduino con Fotoresistencia LDR</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://geekfactory.mx' rel='external nofollow' class='url'>Ruben</a></span> en <a href="http://www.geekfactory.mx/tutoriales/tutoriales-arduino/sensor-ultrasonico-hc-sr04-y-arduino/#comment-6150">Tutorial Sensor Ultrasónico HC-SR04 y Arduino</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://geekfactory.mx' rel='external nofollow' class='url'>Ruben</a></span> en <a href="http://www.geekfactory.mx/tutoriales/tutoriales-arduino/sensor-ultrasonico-hc-sr04-y-arduino/#comment-6149">Tutorial Sensor Ultrasónico HC-SR04 y Arduino</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://lanzarduino.beautifullcode.com/el-sensor-hc-sr04-para-medir-distancias/' rel='external nofollow' class='url'>El sensor HC-SR04 para medir distancia - Lanzarduino</a></span> en <a href="http://www.geekfactory.mx/tutoriales/tutoriales-arduino/sensor-ultrasonico-hc-sr04-y-arduino/#comment-6148">Tutorial Sensor Ultrasónico HC-SR04 y Arduino</a></li><li class="recentcomments"><span class="comment-author-link">Issac Herrera</span> en <a href="http://www.geekfactory.mx/arduino/driver-ch340-para-arduino-chinos-o-genericos/#comment-6129">Driver CH340 para arduino chinos o genericos</a></li></ul></div> <!-- end .et_pb_widget --><div id="text-6" class="et_pb_widget widget_text"><h4 class="widgettitle">Distribuciones</h4>			<div class="textwidget"><p>Geekfactory es distribuidor de las siguientes marcas internacionales de dispositivos electrónicos:</p>
+
+<p align="center">
+<img src="http://static.tech-freaks.net/arduino_logo.png"/>
+
+</p><p align="center">
+<img src="http://static.tech-freaks.net/itead_logo.png"/>
+</p>
+</div>
+		</div> <!-- end .et_pb_widget -->	</div> <!-- end #sidebar -->
+		</div> <!-- #content-area -->
+	</div> <!-- .container -->
+</div> <!-- #main-content -->
+
+
+			<footer id="main-footer">
+				
+<div class="container">
+	<div id="footer-widgets" class="clearfix">
+	<div class="footer-widget"><div id="text-2" class="fwidget et_pb_widget widget_text"><h4 class="title">¿Que es Geek Factory?</h4>			<div class="textwidget"><p>En Geek Factory seleccionamos los mejores productos de las mejores tiendas a nivel internacional y los traemos para tí directamente. !Ahora no tienes que esperar meses para obtener los productos que requieres en tu proyecto al mejor precio!<br />
+Nuestra misión es acercar la tecnología a todas las personas interesadas en México. Pero no solo eso... nuestra misión es ayudarte a que usar la tecnología resulte más sencillo.</p>
+</div>
+		</div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget"><div id="woocommerce_products-2" class="fwidget et_pb_widget woocommerce widget_products"><h4 class="title">Lo más vendido.</h4><ul class="product_list_widget">
+<li>
+	<a href="http://www.geekfactory.mx/tienda/arduino/arduino-uno-r3/" title="Arduino UNO R3">
+		<img width="157" height="157" src="http://www.geekfactory.mx/wp-content/uploads/2013/06/arduino_uno_r3_original_00-157x157.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="arduino_uno_r3_original_00" srcset="http://www.geekfactory.mx/wp-content/uploads/2013/06/arduino_uno_r3_original_00-150x150.jpg 150w, http://www.geekfactory.mx/wp-content/uploads/2013/06/arduino_uno_r3_original_00-157x157.jpg 157w, http://www.geekfactory.mx/wp-content/uploads/2013/06/arduino_uno_r3_original_00-400x400.jpg 400w" sizes="(max-width: 157px) 100vw, 157px" />		<span class="product-title">Arduino UNO R3</span>
+	</a>
+		<span class="amount">&#36;370.00</span></li>
+
+<li>
+	<a href="http://www.geekfactory.mx/tienda/sensores/hc-sr04-sensor-de-distancia-ultrasonico/" title="HC-SR04 Sensor de distancia ultrasónico">
+		<img width="157" height="157" src="http://www.geekfactory.mx/wp-content/uploads/2013/06/HC-SR04_sensor_distancia_ultrasonico_00-157x157.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="HC-SR04_sensor_distancia_ultrasonico_00" srcset="http://www.geekfactory.mx/wp-content/uploads/2013/06/HC-SR04_sensor_distancia_ultrasonico_00-150x150.jpg 150w, http://www.geekfactory.mx/wp-content/uploads/2013/06/HC-SR04_sensor_distancia_ultrasonico_00-157x157.jpg 157w, http://www.geekfactory.mx/wp-content/uploads/2013/06/HC-SR04_sensor_distancia_ultrasonico_00-400x400.jpg 400w" sizes="(max-width: 157px) 100vw, 157px" />		<span class="product-title">HC-SR04 Sensor de distancia ultrasónico</span>
+	</a>
+		<span class="amount">&#36;40.00</span></li>
+
+<li>
+	<a href="http://www.geekfactory.mx/tienda/cables-y-conectores/jumpers-para-protoboard-65-piezas/" title="Jumpers para protoboard 65 piezas">
+		<img width="157" height="157" src="http://www.geekfactory.mx/wp-content/uploads/2013/06/jumpers_para_protoboard_00-157x157.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="jumpers_para_protoboard_00" srcset="http://www.geekfactory.mx/wp-content/uploads/2013/06/jumpers_para_protoboard_00-150x150.jpg 150w, http://www.geekfactory.mx/wp-content/uploads/2013/06/jumpers_para_protoboard_00-157x157.jpg 157w, http://www.geekfactory.mx/wp-content/uploads/2013/06/jumpers_para_protoboard_00-400x400.jpg 400w" sizes="(max-width: 157px) 100vw, 157px" />		<span class="product-title">Jumpers para protoboard 65 piezas</span>
+	</a>
+		<span class="amount">&#36;65.00</span></li>
+
+<li>
+	<a href="http://www.geekfactory.mx/tienda/motores-y-controladores/servo-sg90-tower-pro/" title="Servo SG90 Tower Pro Servomotor Micro">
+		<img width="157" height="157" src="http://www.geekfactory.mx/wp-content/uploads/2013/11/SG90_tower_pro_servo_micro_00-157x157.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="SG90_tower_pro_servo_micro_00" srcset="http://www.geekfactory.mx/wp-content/uploads/2013/11/SG90_tower_pro_servo_micro_00-150x150.jpg 150w, http://www.geekfactory.mx/wp-content/uploads/2013/11/SG90_tower_pro_servo_micro_00-157x157.jpg 157w, http://www.geekfactory.mx/wp-content/uploads/2013/11/SG90_tower_pro_servo_micro_00-400x400.jpg 400w" sizes="(max-width: 157px) 100vw, 157px" />		<span class="product-title">Servo SG90 Tower Pro Servomotor Micro</span>
+	</a>
+		<span class="amount">&#36;60.00</span></li>
+
+<li>
+	<a href="http://www.geekfactory.mx/tienda/motores-y-controladores/modulo-puente-h-l298n/" title="Módulo Driver Puente H L298N">
+		<img width="157" height="157" src="http://www.geekfactory.mx/wp-content/uploads/2013/06/L298N_modulo_puente_h_00-157x157.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="L298N_modulo_puente_h_00" srcset="http://www.geekfactory.mx/wp-content/uploads/2013/06/L298N_modulo_puente_h_00-150x150.jpg 150w, http://www.geekfactory.mx/wp-content/uploads/2013/06/L298N_modulo_puente_h_00-157x157.jpg 157w, http://www.geekfactory.mx/wp-content/uploads/2013/06/L298N_modulo_puente_h_00-400x400.jpg 400w" sizes="(max-width: 157px) 100vw, 157px" />		<span class="product-title">Módulo Driver Puente H L298N</span>
+	</a>
+		<span class="amount">&#36;80.00</span></li>
+</ul></div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget"><div id="nav_menu-4" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">Sobre nosotros&#8230;</h4><div class="menu-nosotros-container"><ul id="menu-nosotros" class="menu"><li id="menu-item-4296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4296"><a href="http://www.geekfactory.mx/como-comprar/">¿Cómo comprar?</a></li>
+<li id="menu-item-436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-436"><a href="http://www.geekfactory.mx/quienes-somos/">¿Quiénes Somos?</a></li>
+<li id="menu-item-489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-489"><a href="http://www.geekfactory.mx/formas-de-pago/">Formas de Pago</a></li>
+<li id="menu-item-5432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5432"><a href="http://www.geekfactory.mx/contacto/">Contacto</a></li>
+<li id="menu-item-3162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3162"><a href="http://www.geekfactory.mx/distribuidores-locales-de-arduino/">Distribuidores</a></li>
+<li id="menu-item-5390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5390"><a href="http://www.geekfactory.mx/cursos-de-arduino-en-mexico/">Cursos de Arduino en México</a></li>
+<li id="menu-item-435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-435"><a href="http://www.geekfactory.mx/politica-de-privacidad/">Política de Privacidad</a></li>
+</ul></div></div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget last"><div id="text-7" class="fwidget et_pb_widget widget_text"><h4 class="title">Afiliados y estadísticas</h4>			<div class="textwidget"><p>Afiliados:</p>
+<p align="center">
+<a href="http://elcajondeardu.blogspot.mx" alt="El Cajón de Ardu" target="_blank"><img src="http://publicaciones.tech-freaks.net/banner_ecda.jpg" width="220"/></a>
+</p>
+
+
+<p>Visitantes:</p>
+<p align="center">
+<script type="text/javascript" src="http://jk.revolvermaps.com/2/1.js?i=atm6x4wxfez&amp;s=220&amp;m=0&amp;v=false&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff0000" async="async"></script>
+</p>
+
+</div>
+		</div> <!-- end .fwidget --></div> <!-- end .footer-widget -->	</div> <!-- #footer-widgets -->
+</div>	<!-- .container -->
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<ul class="et-social-icons">
+
+	<li class="et-social-icon et-social-facebook">
+		<a href="#" class="icon">
+			<span>Facebook</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-twitter">
+		<a href="#" class="icon">
+			<span>Twitter</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-google-plus">
+		<a href="#" class="icon">
+			<span>Google</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-rss">
+		<a href="http://www.geekfactory.mx/feed/" class="icon">
+			<span>RSS</span>
+		</a>
+	</li>
+
+</ul>
+						<p id="footer-info">Diseñado por <a href="http://www.elegantthemes.com" title="Premium WordPress Themes">Elegant Themes</a> | Desarrollado por <a href="http://www.wordpress.org">WordPress</a></p>
+					</div>	<!-- .container -->
+				</div>
+			</footer> <!-- #main-footer -->
+		</div> <!-- #et-main-area -->
+
+
+	</div> <!-- #page-container -->
+
+	        <script type="text/javascript">
+        // <![CDATA[
+        var disqus_shortname = 'geekfactory';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); 
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        // ]]>
+        </script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26119812-1', 'geekfactory.mx');
+  ga('send', 'pageview');
+
+</script><script type='text/javascript' src='http://www.geekfactory.mx/wp-content/themes/Divi/includes/builder/scripts/frontend-builder-global-functions.js?ver=2.6.4.4'></script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-includes/js/jquery/jquery.form.min.js?ver=3.37.0'></script>
+<script type='text/javascript' src='//www.geekfactory.mx/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wp-content\/uploads\/2014\/02\/conexi%C3%B3n_arduino_bluetooth-1024x496.png?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.geekfactory.mx/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=2.5.2'></script>
+<script type='text/javascript' src='//www.geekfactory.mx/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wp-content\/uploads\/2014\/02\/conexi%C3%B3n_arduino_bluetooth-1024x496.png?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.geekfactory.mx/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=2.5.2'></script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-content/themes/Divi/includes/builder/scripts/jquery.mobile.custom.min.js?ver=2.6.4.4'></script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-content/themes/Divi/js/custom.js?ver=2.6.4.4'></script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-content/themes/Divi/includes/builder/scripts/jquery.fitvids.js?ver=2.6.4.4'></script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-content/themes/Divi/includes/builder/scripts/waypoints.min.js?ver=2.6.4.4'></script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-content/themes/Divi/includes/builder/scripts/jquery.magnific-popup.js?ver=2.6.4.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_pb_custom = {"ajaxurl":"http:\/\/www.geekfactory.mx\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/www.geekfactory.mx\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/www.geekfactory.mx\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"cd1a10ca8c","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","is_builder_plugin_used":"","is_divi_theme_used":"1","widget_search_selector":".widget_search"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-content/themes/Divi/includes/builder/scripts/frontend-builder-scripts.js?ver=2.6.4.4'></script>
+<script type='text/javascript' src='http://www.geekfactory.mx/wp-includes/js/wp-embed.min.js?ver=4.4.2'></script>
+</body>
+</html>
