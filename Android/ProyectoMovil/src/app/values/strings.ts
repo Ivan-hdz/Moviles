@@ -1,1 +1,1 @@
-export const ENDPOINT = 'http://192.168.1.71:3000';
+export const ENDPOINT = 'http://10.100.71.144:3000';
