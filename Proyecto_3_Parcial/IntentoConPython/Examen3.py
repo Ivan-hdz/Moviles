@@ -1,6 +1,7 @@
 import time
 
 # Captura de video
+import null as null
 from cv2 import *
 import base64
 
@@ -12,12 +13,11 @@ sio = socketio.AsyncServer()
 app = web.Application()
 sio.attach(app)
 
-
 async def captureFrame():
     cap = cv2.VideoCapture(0)
     i = 0
     while True:
-        if i == 30:
+        if i == 30 :
             break
         s, image = cap.read()
         # Convert captured image to JPG
@@ -34,9 +34,10 @@ async def captureFrame():
         # Write to a file to show conversion worked
         # with open(str(i) + '.jpg', 'wb') as f_output:
         #     f_output.write(jpg_original)
-        await sio.sleep(0)
-        time.sleep(0.013)
+        # await sio.sleep(0)
+        time.sleep(0.13)
     cap.release()
+
 
 
 async def index(request):
@@ -49,6 +50,11 @@ async def index(request):
 async def connect(sid, environ):
     await captureFrame()
 
+@sio.on('disconnect')
+def disconnect(sid, environ):
+    print('Disconnected')
+
+
 
 app.router.add_static('/', '')
 app.router.add_get('/', index)
@@ -56,3 +62,12 @@ app.router.add_get('/', index)
 if __name__ == '__main__':
     sio.async_mode = True
     web.run_app(app)
+
+import threading
+def set_interval(func, sec):
+    def func_wrapper():
+        set_interval(func, sec)
+        func()
+    t = threading.Timer(sec, func_wrapper())
+    t.start()
+    return t
