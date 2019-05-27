@@ -4,7 +4,7 @@ from serial import Serial
 # sudo chmod 777 /dev/ttyACM0
 arduino = Serial('/dev/ttyACM0', 9600, timeout=1)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock.bind(("", 3000)) # could also use "0.0.0.0"
+sock.bind(("0.0.0.0", 3000)) # could also use "0.0.0.0"
 
 ADELANTE = b'a'
 ATRAS = b'b'
@@ -18,13 +18,35 @@ ABAJO = b'f'
 # abajo +9 arriba -9 en z
 
 def getDirection(string):
+    x = 0.0
+    y = 0.0
+    z = 0.0
     arr = string.split(';')
-    x = int(arr[0])
-    y = int(arr[1])
-    z = int(arr[2])
+    if arr[0][0] == '-':
+        arr[0] = arr[0].replace('-', '')
+        x = float(arr[0])
+        x = x * -1
+    else :
+        x = float(arr[0])
+
+    if arr[1][0] == '-':
+        arr[1] = arr[1].replace('-', '')
+        y = float(arr[1])
+        y = y * -1
+    else :
+        y = float(arr[1])
+
+    if arr[2][0] == '-':
+        arr[2] = arr[2].replace('-', '')
+        z = float(arr[2])
+        z = z * -1
+    else :
+        z = float(arr[2])
+
     z = z - 9.81
-    if x > y :
-        if x > z :
+
+    if abs(x) > abs(y) :
+        if abs(x) > abs(z) :
             # x es el mas grande
             if x > 0 :
                 return IZQUIERDA
@@ -37,7 +59,7 @@ def getDirection(string):
             else :
                 return ARRIBA
     else :
-        if y > z :
+        if abs(y) > abs(z) :
             # y es el mas grande
             if y > 0 :
                 return ATRAS
@@ -58,8 +80,7 @@ try:
         # print('waiting to receive')
         data, server = sock.recvfrom(1024)
         arduino.write(getDirection(data.decode('UTF-8')))
-        # print(arduino.readline().decode('UTF-8'))
-        print(data.decode('UTF-8'))
+
 
 finally:
     sock.close()

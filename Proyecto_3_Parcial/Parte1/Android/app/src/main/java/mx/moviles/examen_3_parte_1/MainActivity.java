@@ -7,6 +7,9 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 
@@ -15,12 +18,20 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 public class MainActivity extends AppCompatActivity {
-
+    Button btn_ip;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btn_ip = (Button)findViewById(R.id.btn_ip);
+        btn_ip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(myDatagramReceiver != null)
+                    myDatagramReceiver.UDP_SERVER_ADDR = ((EditText)findViewById(R.id.txt_ip)).getText().toString();
+            }
+        });
     }
     private MyDatagramReceiver myDatagramReceiver = null;
 
@@ -38,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     private class MyDatagramReceiver extends Thread implements SensorEventListener {
         private boolean bKeepRunning = true;
-        private final String UDP_SERVER_ADDR = "192.168.1.255";
+        public  String UDP_SERVER_ADDR = "192.168.1.255";
         private final int MAX_UDP_DATAGRAM_LEN = 90000;
         private final int UDP_SERVER_PORT = 3000;
         private String lastMessage = "";
